@@ -33,6 +33,9 @@ htmlcov/
 tmp/
 temp/
 
+# Data
+data/raw/*.xlsx
+
 # Generated data
 data/processed/*
 !data/processed/.gitkeep
