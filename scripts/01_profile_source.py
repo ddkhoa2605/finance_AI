@@ -303,29 +303,80 @@ def validate_gross_sales_formula(df: pd.DataFrame) -> dict:
     return result
 
 
-def check_candidate_grain(df: pd.DataFrame, columns: list[str]) -> dict:
-    temp_df = df.copy()
-    temp_df.columns = temp_df.columns.str.strip()
+def analyze_candidate_business_context(
+    df: pd.DataFrame,
+    columns: list[str],
+) -> tuple[dict, pd.DataFrame, pd.DataFrame]:
+    """Check whether candidate business dimensions uniquely identify rows.
 
+    This observes a candidate context only. It does not assert that the
+    dimensions are the true source grain or alter repeated source rows.
+    """
     existing_columns = [
-        column for column in columns if column in temp_df.columns
+        column for column in columns if column in df.columns
     ]
 
     if not existing_columns:
-        return {
+        summary = {
             "columns": [],
-            "unique": False,
+            "repeated_grain_groups": 0,
+            "rows_in_repeated_grain_groups": 0,
+            "rows_beyond_first_in_group": 0,
+            "largest_group_size": 0,
+            "candidate_context_is_unique": False,
         }
+        return summary, pd.DataFrame(), pd.DataFrame()
 
-    duplicate_count = int(
-        temp_df.duplicated(subset=existing_columns, keep=False).sum()
+    context_groups = (
+        df.groupby(existing_columns, dropna=False)
+        .size()
+        .reset_index(name="row_count")
+    )
+    repeated_groups = (
+        context_groups[context_groups["row_count"] > 1]
+        .sort_values(
+            ["row_count"] + existing_columns,
+            ascending=[False] + [True] * len(existing_columns),
+        )
+        .reset_index(drop=True)
     )
 
-    return {
+    repeated_grain_groups = len(repeated_groups)
+    rows_in_repeated_grain_groups = int(
+        repeated_groups["row_count"].sum()
+    )
+    rows_beyond_first_in_group = int(
+        (repeated_groups["row_count"] - 1).sum()
+    )
+    largest_group_size = (
+        int(repeated_groups["row_count"].max())
+        if not repeated_groups.empty
+        else 1
+    )
+
+    summary = {
         "columns": existing_columns,
-        "duplicate_rows_at_grain": duplicate_count,
-        "unique": duplicate_count == 0,
+        "repeated_grain_groups": repeated_grain_groups,
+        "rows_in_repeated_grain_groups": rows_in_repeated_grain_groups,
+        "rows_beyond_first_in_group": rows_beyond_first_in_group,
+        "largest_group_size": largest_group_size,
+        "candidate_context_is_unique": repeated_grain_groups == 0,
     }
+
+    if repeated_groups.empty:
+        repeated_rows = pd.DataFrame()
+    else:
+        repeated_rows = (
+            df.merge(
+                repeated_groups[existing_columns],
+                on=existing_columns,
+                how="inner",
+            )
+            .sort_values(existing_columns)
+            .reset_index(drop=True)
+        )
+
+    return summary, repeated_groups, repeated_rows
 
 def profile_cardinality(
     df: pd.DataFrame,
@@ -371,7 +422,9 @@ def generate_report(
     dimensions: dict,
     duplicates: dict,
     time_profile: dict,
-    grain_result: dict,
+    candidate_context_summary: dict,
+    repeated_context_groups: pd.DataFrame,
+    repeated_context_details: pd.DataFrame,
     sales_validation: dict,
     profit_validation: dict,
     gross_sales_validation: dict,
@@ -474,19 +527,68 @@ def generate_report(
 
     lines.append("")
 
-    lines.append("## 8. Candidate Grain")
+    lines.append("## 8. Candidate Business Context / Grain Check")
     lines.append("")
     lines.append(
-        f"- Columns: "
-        f"{grain_result['columns']}"
+        "Candidate dimensions: "
+        + " × ".join(candidate_context_summary["columns"])
     )
     lines.append(
-        f"- Duplicate rows at candidate grain: "
-        f"{grain_result['duplicate_rows_at_grain']}"
+        f"- Repeated candidate-context groups: "
+        f"{candidate_context_summary['repeated_grain_groups']}"
     )
     lines.append(
-        f"- Unique grain: "
-        f"{grain_result['unique']}"
+        f"- Rows in repeated groups: "
+        f"{candidate_context_summary['rows_in_repeated_grain_groups']}"
+    )
+    lines.append(
+        f"- Rows beyond the first observation in repeated groups: "
+        f"{candidate_context_summary['rows_beyond_first_in_group']}"
+    )
+    lines.append(
+        f"- Largest group size: "
+        f"{candidate_context_summary['largest_group_size']}"
+    )
+    lines.append(
+        f"- Candidate context is unique: "
+        f"{candidate_context_summary['candidate_context_is_unique']}"
+    )
+
+    lines.append("")
+    lines.append("### Repeated Candidate Context Groups")
+    lines.append("")
+    if repeated_context_groups.empty:
+        lines.append("_No repeated candidate-context groups._")
+    else:
+        lines.append(dataframe_to_markdown(repeated_context_groups))
+
+    lines.append("")
+    lines.append("### Source Rows in Repeated Candidate Context Groups")
+    lines.append("")
+    if repeated_context_details.empty:
+        lines.append("_No source rows belong to repeated candidate contexts._")
+    else:
+        lines.append(dataframe_to_markdown(repeated_context_details))
+
+    lines.append("")
+    lines.append("### Interpretation")
+    lines.append("")
+    lines.append(
+        "The candidate dimensions describe the business context of a source "
+        "sales observation, but they do not form a natural unique key for "
+        "the source rows."
+    )
+    lines.append("")
+    lines.append(
+        "The source does not provide an explicit Transaction ID, Order ID, "
+        "Invoice ID, or equivalent record identifier. Therefore, this "
+        "profiling step does not conclude that the candidate dimensions are "
+        "the true source grain."
+    )
+    lines.append("")
+    lines.append(
+        "Rows in repeated candidate-context groups are retained as-is. No "
+        "deduplication, aggregation, or cleaning is performed during Phase 1."
     )
 
     lines.append("")
@@ -629,15 +731,47 @@ def main():
         df
     )
 
-    grain_result = check_candidate_grain(
+    candidate_context_columns = [
+        "Date",
+        "Country",
+        "Segment",
+        "Product",
+        "Discount Band",
+    ]
+
+    (
+        candidate_context_summary,
+        repeated_context_groups,
+        repeated_context_rows,
+    ) = analyze_candidate_business_context(
         df,
-        [
-            "Date",
-            "Country",
-            "Segment",
-            "Product",
-            "Discount Band",
-        ],
+        candidate_context_columns,
+    )
+
+    repeated_detail_columns = [
+        "Date",
+        "Country",
+        "Segment",
+        "Product",
+        "Discount Band",
+        "Units Sold",
+        "Manufacturing Price",
+        "Sale Price",
+        "Gross Sales",
+        "Discounts",
+        "Sales",
+        "COGS",
+        "Profit",
+    ]
+    existing_detail_columns = [
+        column
+        for column in repeated_detail_columns
+        if column in repeated_context_rows.columns
+    ]
+    repeated_context_details = (
+        repeated_context_rows[existing_detail_columns]
+        if not repeated_context_rows.empty
+        else pd.DataFrame(columns=existing_detail_columns)
     )
 
     sales_validation = (
@@ -661,7 +795,9 @@ def main():
         dimensions=dimensions,
         duplicates=duplicates,
         time_profile=time_profile,
-        grain_result=grain_result,
+        candidate_context_summary=candidate_context_summary,
+        repeated_context_groups=repeated_context_groups,
+        repeated_context_details=repeated_context_details,
         sales_validation=sales_validation,
         profit_validation=profit_validation,
         gross_sales_validation=gross_sales_validation,
