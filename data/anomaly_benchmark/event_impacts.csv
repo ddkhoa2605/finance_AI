@@ -1,0 +1,36 @@
+event_id,event_type,metric,period_start,period_end,country,product,segment,department,before,after,delta,delta_pct,expected_direction,actual_direction,direction_pass,matched_rows
+EVT_001,volume,average_sale_price,2014-07-01,2014-09-01,Mexico,Paseo,,,34.272608614581394,34.272608614581394,0.0,0.0,unchanged,unchanged,True,6
+EVT_001,volume,cogs,2014-07-01,2014-09-01,Mexico,Paseo,,,299378.0,263452.64,-35925.359999999986,-0.11999999999999995,decrease,decrease,True,6
+EVT_001,volume,discount,2014-07-01,2014-09-01,Mexico,Paseo,,,11231.91,9884.0808,-1347.8292000000001,-0.12000000000000001,decrease,decrease,True,6
+EVT_001,volume,discount_rate,2014-07-01,2014-09-01,Mexico,Paseo,,,0.030554041261343604,0.0305540412613436,-3.469446951953614e-18,-1.1355116405969814e-16,unchanged,unchanged,True,6
+EVT_001,volume,ebitda,2014-07-01,2014-09-01,Mexico,Paseo,,,-302388.7105324939,-299933.1648621749,2455.5456703189993,0.008120493870273417,increase,increase,True,6
+EVT_001,volume,gross_profit,2014-07-01,2014-09-01,Mexico,Paseo,,,56998.09,50158.31920000003,-6839.770799999969,-0.11999999999999947,decrease,decrease,True,6
+EVT_001,volume,gross_sales,2014-07-01,2014-09-01,Mexico,Paseo,,,367608.0,323495.04000000004,-44112.95999999996,-0.1199999999999999,decrease,decrease,True,6
+EVT_001,volume,revenue,2014-07-01,2014-09-01,Mexico,Paseo,,,356376.09,313610.95920000004,-42765.130799999984,-0.11999999999999995,decrease,decrease,True,6
+EVT_001,volume,unit_cogs,2014-07-01,2014-09-01,Mexico,Paseo,,,27.91143016968115,27.911430169681147,-3.552713678800501e-15,-1.2728526117087484e-16,unchanged,unchanged,True,6
+EVT_001,volume,units,2014-07-01,2014-09-01,Mexico,Paseo,,,10726.0,9438.880000000001,-1287.119999999999,-0.1199999999999999,decrease,decrease,True,6
+EVT_002,unit_cogs,average_sale_price,2014-10-01,2014-12-01,Germany,VTT,,,166.59409594095942,166.59409594095942,0.0,0.0,unchanged,unchanged,True,4
+EVT_002,unit_cogs,cogs,2014-10-01,2014-12-01,Germany,VTT,,,844520.0,912081.6000000001,67561.6000000001,0.08000000000000011,increase,increase,True,4
+EVT_002,unit_cogs,discount,2014-10-01,2014-12-01,Germany,VTT,,,37308.349999999984,37308.349999999984,0.0,0.0,unchanged,unchanged,True,4
+EVT_002,unit_cogs,discount_rate,2014-10-01,2014-12-01,Germany,VTT,,,0.033054998117261376,0.033054998117261376,0.0,0.0,unchanged,unchanged,True,4
+EVT_002,unit_cogs,ebitda,2014-10-01,2014-12-01,Germany,VTT,,,-382326.3468559655,-449887.94685596554,-67561.60000000003,-0.17671186031406996,decrease,decrease,True,4
+EVT_002,unit_cogs,gross_profit,2014-10-01,2014-12-01,Germany,VTT,,,246846.65000000008,179285.04999999996,-67561.60000000012,-0.27369867081445143,decrease,decrease,True,4
+EVT_002,unit_cogs,gross_sales,2014-10-01,2014-12-01,Germany,VTT,,,1128675.0,1128675.0,0.0,0.0,unchanged,unchanged,True,4
+EVT_002,unit_cogs,revenue,2014-10-01,2014-12-01,Germany,VTT,,,1091366.6500000001,1091366.6500000001,0.0,0.0,unchanged,unchanged,True,4
+EVT_002,unit_cogs,unit_cogs,2014-10-01,2014-12-01,Germany,VTT,,,124.65239852398524,134.6245904059041,9.972191881918846,0.08000000000000021,increase,increase,True,4
+EVT_002,unit_cogs,units,2014-10-01,2014-12-01,Germany,VTT,,,6775.0,6775.0,0.0,0.0,unchanged,unchanged,True,4
+EVT_003,opex,ebitda,2014-01-01,2014-12-01,France,,,Marketing,-2021094.6306523231,-2199812.5005436707,-178717.8698913476,-0.08842627513866834,decrease,decrease,True,12
+EVT_003,opex,gross_profit,2014-01-01,2014-12-01,France,,,Marketing,2969688.6099999994,2969688.6099999994,0.0,0.0,unchanged,unchanged,True,12
+EVT_003,opex,opex_marketing,2014-01-01,2014-12-01,France,,,Marketing,1191452.465942319,1370170.3358336673,178717.8698913483,0.15000000000000038,increase,increase,True,12
+EVT_003,opex,opex_total,2014-01-01,2014-12-01,France,,,Marketing,4990783.240652323,5169501.11054367,178717.86989134736,0.035809583641221804,increase,increase,True,12
+EVT_003,opex,revenue,2014-01-01,2014-12-01,France,,,Marketing,19221377.11,19221377.11,0.0,0.0,unchanged,unchanged,True,12
+EVT_004,discount_rate,average_sale_price,2014-04-01,2014-06-01,United States of America,Amarilla,,,47.28744713999555,47.28744713999555,0.0,0.0,unchanged,unchanged,True,3
+EVT_004,discount_rate,cogs,2014-04-01,2014-06-01,United States of America,Amarilla,,,374494.0,374494.0,0.0,0.0,unchanged,unchanged,True,3
+EVT_004,discount_rate,discount,2014-04-01,2014-06-01,United States of America,Amarilla,,,53449.12000000001,74695.37000000001,21246.25,0.3975042058690582,increase,increase,True,3
+EVT_004,discount_rate,discount_rate,2014-04-01,2014-06-01,United States of America,Amarilla,,,0.12578483261752077,0.17578483261752076,0.04999999999999999,0.3975042058690581,increase,increase,True,3
+EVT_004,discount_rate,ebitda,2014-04-01,2014-06-01,United States of America,Amarilla,,,-712405.2391230378,-728455.5592816763,-16050.320158638526,-0.022529761541894715,decrease,decrease,True,3
+EVT_004,discount_rate,gross_profit,2014-04-01,2014-06-01,United States of America,Amarilla,,,-3018.1200000000026,-24264.370000000003,-21246.25,-7.039564364571317,decrease,decrease,True,3
+EVT_004,discount_rate,gross_sales,2014-04-01,2014-06-01,United States of America,Amarilla,,,424925.0,424925.0,0.0,0.0,unchanged,unchanged,True,3
+EVT_004,discount_rate,revenue,2014-04-01,2014-06-01,United States of America,Amarilla,,,371475.88,350229.63,-21246.25,-0.05719415753184298,decrease,decrease,True,3
+EVT_004,discount_rate,unit_cogs,2014-04-01,2014-06-01,United States of America,Amarilla,,,41.67527264633875,41.67527264633875,0.0,0.0,unchanged,unchanged,True,3
+EVT_004,discount_rate,units,2014-04-01,2014-06-01,United States of America,Amarilla,,,8986.0,8986.0,0.0,0.0,unchanged,unchanged,True,3

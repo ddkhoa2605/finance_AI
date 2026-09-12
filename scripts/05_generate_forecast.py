@@ -525,6 +525,8 @@ def generate_report(
         "",
         comparison.to_markdown(index=False, floatfmt=".4f"),
         "",
+        "Variance percentage uses `(Forecast - Budget) / abs(Budget)`. For negative baseline metrics such as EBITDA, the absolute denominator preserves the favorable/unfavorable direction instead of reversing the sign.",
+        "",
         "Budget is comparison context only. It is not a model feature, target, or champion-selection input.",
         "",
         "## Validation Checks",

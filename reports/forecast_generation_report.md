@@ -80,6 +80,8 @@ ASP, Unit COGS, and Discount Rate use same-grain/same-month prior year first, fo
 | OPEX_TOTAL   |   22883227.8512 |  24864946.7053 |  -1981718.8542 |        -0.0797 |
 | EBITDA       |  -11214384.6602 | -10715735.7872 |   -498648.8730 |        -0.0465 |
 
+Variance percentage uses `(Forecast - Budget) / abs(Budget)`. For negative baseline metrics such as EBITDA, the absolute denominator preserves the favorable/unfavorable direction instead of reversing the sign.
+
 Budget is comparison context only. It is not a model feature, target, or champion-selection input.
 
 ## Validation Checks

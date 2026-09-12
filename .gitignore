@@ -39,3 +39,6 @@ data/raw/*.xlsx
 # Generated data
 data/processed/*
 !data/processed/.gitkeep
+
+# Plan
+plan.md

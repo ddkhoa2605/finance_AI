@@ -1,0 +1,115 @@
+{
+  "forecast_summary": {
+    "champion": "xgboost",
+    "evaluation_context_hash": "93ac4605e9fe2015c74af2cf107079e69951ec7a435e7777095b5118cd413c29",
+    "forecast_year": 2015,
+    "prediction_input_hash": "8749f2b687dbd82566b2416a6248049d93ab6106eb32e0c89690573b5912dcd8",
+    "recursive_wape": {
+      "ridge": 0.4771670664803049,
+      "seasonal_naive": 0.5659271452978663,
+      "xgboost": 0.43344203221067557
+    },
+    "training_end": "2014-12-01"
+  },
+  "git_head_at_snapshot": "259f6b029e9c18393ce491b1f57806f912452e66",
+  "notes": [
+    "Budget is comparison context only.",
+    "Missing observations are not zero-filled.",
+    "Model quality is acceptable for PoC architecture validation, not production deployment.",
+    "Phase 6 must use an event-injection layer and leave this baseline unchanged."
+  ],
+  "snapshot_date": "2026-09-12",
+  "snapshot_tag": "phase5-poc-complete-v1",
+  "source_files": {
+    "config/budget.yaml": {"bytes": 322, "sha256": "26c40d7bd0ad341865915b3ec089cf766f7f0a75898fc08d104f7c050080542e"},
+    "config/forecast.yaml": {"bytes": 648, "sha256": "2f204f18bef4fe88be177458639c5f8b30d6571d0c1ae418a558ffa51338d9ff"},
+    "config/opex.yaml": {"bytes": 931, "sha256": "38c726144d76729a937a048369b8a903f1fe40e6548e1a0b9ca348840528f96d"},
+    "requirements.txt": {"bytes": 70, "sha256": "a783784dde9764e7e7d6dd159c72f060e93b264c7fab7d2216fb5723749fa6af"},
+    "scripts/02_build_actual.py": {"bytes": 15487, "sha256": "93bb8e215b0ea35a48781c9ddb06f5d6f299e38a89720613adb3c5d707791728"},
+    "scripts/03_generate_opex.py": {"bytes": 22555, "sha256": "41a38006d04c1fd7551510c09f974290e0a4645e7369a13f93ca2e2db4d26a62"},
+    "scripts/04_generate_budget.py": {"bytes": 34704, "sha256": "1cf98afa7710ecc9ff8885d8c405aacde989d204280d53a2dd2e00796d9637d3"},
+    "scripts/05_generate_forecast.py": {"bytes": 25995, "sha256": "2d9e3dd3563053c45549e7220b9d93c64eeb7e86023ad02e70a0b0af52fcc92f"},
+    "scripts/calculation/finance.py": {"bytes": 2969, "sha256": "71573e0b23039cd537907df480e62c6f8fb329c52bd98517b8616e78018905e6"},
+    "scripts/calculation/opex.py": {"bytes": 8642, "sha256": "7ad4da848ec8565911dd6a075cbbba48bda8477d9c2135a69d39365eb39371e9"},
+    "scripts/forecasting/driver_rules.py": {"bytes": 4207, "sha256": "c89b9d89f025d119e23c54984549ac85ed198cdb78b166b1819d53d5d6df96d5"},
+    "scripts/forecasting/engines/ridge.py": {"bytes": 3090, "sha256": "8d954fe7488d698082ab2bc1c6294bca9bf64f38c7f05fb0e13d0bd01c600f00"},
+    "scripts/forecasting/engines/seasonal_naive.py": {"bytes": 3287, "sha256": "3c72d1ae98fd279d54f8bd9a114cfe503f69288d8e5c8e8dcca64b6bee40a7aa"},
+    "scripts/forecasting/engines/xgboost_engine.py": {"bytes": 2979, "sha256": "ddf7e2b864a127f3c9debaa68843985bc025bfc2026addd16f3fcb289e629b74"},
+    "scripts/forecasting/evaluation.py": {"bytes": 6437, "sha256": "93ebecea5025161897a9cf53c6f1c3d02db115c34c6a4320eea60767b24a564a"},
+    "scripts/forecasting/features.py": {"bytes": 5408, "sha256": "b57378caca2ec1d78121e889a9a42bd3d69620f351cde6b51b1c36962a36327b"},
+    "scripts/forecasting/interface.py": {"bytes": 655, "sha256": "08f34e34486b1aefdf092a1f49ee0866e30ca05c57ea1effe6073cdf494254f1"},
+    "scripts/forecasting/registry.py": {"bytes": 2645, "sha256": "caac20f439e8245ff9b7c0e0d64d49b5d5521351ef2f8f613f51fbcf77020cd5"},
+    "scripts/forecasting/scaffold.py": {"bytes": 1702, "sha256": "867cc4585f5069b2b2fefed6a3a6eb79d2aead12065b4c6ae1f3df550dd1fd79"},
+    "scripts/verify_phase5_snapshot.py": {"bytes": 2277, "sha256": "5b9ec67bf23edd4268003864a202907406b581e7c44021439caf4259bd3ba749"},
+    "tests/test_forecast_driver_fallbacks.py": {"bytes": 3648, "sha256": "0e1e2232caf43e4a507134360c60baa412695823ec55f72802a3af20ea604d4b"}
+  },
+  "status": {
+    "engineering_acceptance": "PASS",
+    "forecast_accuracy": "LIMITED",
+    "poc_readiness": "YES",
+    "proceed_to_phase_6": "YES",
+    "production_readiness": "NO"
+  },
+  "strict_artifacts": {
+    "data/processed/actual.csv": {
+      "bytes": 326937,
+      "columns": ["period_date", "country", "product", "segment", "department", "account", "version", "amount", "currency", "source"],
+      "rows": 3300,
+      "sha256": "e0dce040345f2639ebaff7cf7a7dabbb2dc1df21d2f210d936dd4f732f55e782"
+    },
+    "data/processed/budget.csv": {
+      "bytes": 272454,
+      "columns": ["period_date", "country", "product", "segment", "department", "account", "version", "currency", "source", "amount"],
+      "rows": 2885,
+      "sha256": "065a5cd62bf82069d2971dc8911ace2c49b57abda9ce8da301e5d72d06ce23ca"
+    },
+    "data/processed/budget_drivers.csv": {
+      "bytes": 50921,
+      "columns": ["period_date", "country", "product", "segment", "version", "units", "average_sale_price", "unit_cogs", "discount_rate", "average_manufacturing_price", "source"],
+      "rows": 493,
+      "sha256": "1c059847fa6ebc7bcfda6efab9679881f637c49c95a36f687258687fd12d06d6"
+    },
+    "data/processed/drivers.csv": {
+      "bytes": 71135,
+      "columns": ["period_date", "country", "product", "segment", "version", "units", "average_sale_price", "unit_cogs", "discount_rate", "average_manufacturing_price", "source"],
+      "rows": 660,
+      "sha256": "87395bbcdd6933a6596bf25e38e8449fb1a31dd6576e072fb3fadf81b3821ef5"
+    },
+    "data/processed/finance_fact.csv": {
+      "bytes": 941236,
+      "columns": ["period_date", "country", "product", "segment", "department", "account", "version", "currency", "source", "amount"],
+      "rows": 9630,
+      "sha256": "c7aa6ddd801899dc424e96d24ffec31a153770902e4879749067fa0fb0dadcc0"
+    },
+    "data/processed/forecast.csv": {
+      "bytes": 293646,
+      "columns": ["period_date", "country", "product", "segment", "department", "account", "version", "currency", "source", "amount"],
+      "rows": 2885,
+      "sha256": "d888a868461e5e0df25e0949d905699a2a187f599598b76bfd854f11b788a872"
+    },
+    "data/processed/forecast_drivers.csv": {
+      "bytes": 53318,
+      "columns": ["period_date", "country", "product", "segment", "version", "units", "average_sale_price", "unit_cogs", "discount_rate", "average_manufacturing_price", "source"],
+      "rows": 493,
+      "sha256": "da90e7fb477ccca9ff07dbb3c8c4f53e434f5ace754777fe701c875b63784ac5"
+    },
+    "data/processed/forecast_model_evaluation.csv": {
+      "bytes": 7414,
+      "columns": ["model", "evaluation_type", "fold", "scope", "country", "n_targets", "n_predictions", "prediction_coverage", "mae", "rmse", "wape", "smape", "macro_wape", "median_series_wape"],
+      "rows": 45,
+      "sha256": "d02fd01c547c55bf902c4707fa39e1b8a3691a27689889c44834a87ec5763370"
+    },
+    "data/processed/opex.csv": {
+      "bytes": 52190,
+      "columns": ["period_date", "country", "product", "segment", "department", "account", "version", "currency", "source", "amount"],
+      "rows": 560,
+      "sha256": "a2d714b2b82961b228dfc50392891263899c0e01dfed4cb41fe59b2dc39d5203"
+    },
+    "models/forecast/model_registry.json": {"bytes": 5238, "sha256": "08f4a6af9d4e006a0048dfe304e3acf0cb85caf7f6ffb1b1190fcb6d54a49223"},
+    "models/forecast/ridge.joblib": {"bytes": 5970, "sha256": "bc400d609f0cdecb9864fefef8a95f52e21880409ced3eaa7e2ef426445fbc4f"},
+    "models/forecast/seasonal_naive.joblib": {"bytes": 344, "sha256": "891f86735fa2bfac1fb7248ba2cc1077b799a0f42b798533268e82f314304157"},
+    "models/forecast/xgboost.joblib": {"bytes": 195033, "sha256": "a68a9cb11f959ef679d7af52f1c4733b82fabdb2df551ed2f7ff86718bb80420"},
+    "models/forecast/xgboost.json": {"bytes": 172672, "sha256": "397f578f043f70126caf145f35843eca1a70e37778de5b217fdc160373fae24e"},
+    "reports/forecast_generation_report.md": {"bytes": 6823, "sha256": "5339c854e2ce677970a0bbefd38be3017def1df4042fdb229c2a9733ac84089f"}
+  }
+}

@@ -1,0 +1,91 @@
+benchmark_year: 2014
+benchmark_version: ACTUAL_WITH_EVENTS
+source_name: controlled_event_benchmark_v1
+tolerance: 0.01
+
+events:
+  - event_id: EVT_001
+    event_type: volume
+    period_start: 2014-07-01
+    period_end: 2014-09-01
+    country: Mexico
+    product: Paseo
+    segment: null
+    operation: multiply
+    value: 0.88
+    root_cause: volume_decline
+    expected_direction:
+      units: decrease
+      average_sale_price: unchanged
+      unit_cogs: unchanged
+      discount_rate: unchanged
+      gross_sales: decrease
+      discount: decrease
+      revenue: decrease
+      cogs: decrease
+      gross_profit: decrease
+      ebitda: increase
+    description: Paseo volume shock during Q3 2014.
+
+  - event_id: EVT_002
+    event_type: unit_cogs
+    period_start: 2014-10-01
+    period_end: 2014-12-01
+    country: Germany
+    product: VTT
+    segment: null
+    operation: multiply
+    value: 1.08
+    root_cause: unit_cogs_increase
+    expected_direction:
+      units: unchanged
+      average_sale_price: unchanged
+      unit_cogs: increase
+      discount_rate: unchanged
+      gross_sales: unchanged
+      discount: unchanged
+      revenue: unchanged
+      cogs: increase
+      gross_profit: decrease
+      ebitda: decrease
+    description: Unit COGS inflation for VTT in Germany during Q4 2014.
+
+  - event_id: EVT_003
+    event_type: opex
+    period_start: 2014-01-01
+    period_end: 2014-12-01
+    country: France
+    department: Marketing
+    operation: multiply
+    value: 1.15
+    root_cause: marketing_overspend
+    expected_direction:
+      revenue: unchanged
+      gross_profit: unchanged
+      opex_marketing: increase
+      opex_total: increase
+      ebitda: decrease
+    description: Marketing overspend in France during FY2014.
+
+  - event_id: EVT_004
+    event_type: discount_rate
+    period_start: 2014-04-01
+    period_end: 2014-06-01
+    country: United States of America
+    product: Amarilla
+    segment: null
+    operation: add
+    value: 0.05
+    root_cause: discount_rate_increase
+    expected_direction:
+      units: unchanged
+      average_sale_price: unchanged
+      unit_cogs: unchanged
+      discount_rate: increase
+      gross_sales: unchanged
+      discount: increase
+      revenue: decrease
+      cogs: unchanged
+      gross_profit: decrease
+      ebitda: decrease
+    description: Amarilla discount rate increased by five percentage points in Q2 2014.

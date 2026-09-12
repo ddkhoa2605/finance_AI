@@ -1,0 +1,479 @@
+{
+  "attribution_method": "isolated_event_vs_baseline",
+  "baseline_hashes": {
+    "artifacts": {
+      "data/processed/actual.csv": "e0dce040345f2639ebaff7cf7a7dabbb2dc1df21d2f210d936dd4f732f55e782",
+      "data/processed/budget.csv": "065a5cd62bf82069d2971dc8911ace2c49b57abda9ce8da301e5d72d06ce23ca",
+      "data/processed/budget_drivers.csv": "1c059847fa6ebc7bcfda6efab9679881f637c49c95a36f687258687fd12d06d6",
+      "data/processed/drivers.csv": "87395bbcdd6933a6596bf25e38e8449fb1a31dd6576e072fb3fadf81b3821ef5",
+      "data/processed/finance_fact.csv": "c7aa6ddd801899dc424e96d24ffec31a153770902e4879749067fa0fb0dadcc0",
+      "data/processed/forecast.csv": "d888a868461e5e0df25e0949d905699a2a187f599598b76bfd854f11b788a872",
+      "data/processed/forecast_drivers.csv": "da90e7fb477ccca9ff07dbb3c8c4f53e434f5ace754777fe701c875b63784ac5",
+      "data/processed/forecast_model_evaluation.csv": "d02fd01c547c55bf902c4707fa39e1b8a3691a27689889c44834a87ec5763370",
+      "data/processed/opex.csv": "a2d714b2b82961b228dfc50392891263899c0e01dfed4cb41fe59b2dc39d5203",
+      "models/forecast/model_registry.json": "08f4a6af9d4e006a0048dfe304e3acf0cb85caf7f6ffb1b1190fcb6d54a49223",
+      "models/forecast/ridge.joblib": "bc400d609f0cdecb9864fefef8a95f52e21880409ced3eaa7e2ef426445fbc4f",
+      "models/forecast/seasonal_naive.joblib": "891f86735fa2bfac1fb7248ba2cc1077b799a0f42b798533268e82f314304157",
+      "models/forecast/xgboost.joblib": "a68a9cb11f959ef679d7af52f1c4733b82fabdb2df551ed2f7ff86718bb80420",
+      "models/forecast/xgboost.json": "397f578f043f70126caf145f35843eca1a70e37778de5b217fdc160373fae24e",
+      "reports/forecast_generation_report.md": "5339c854e2ce677970a0bbefd38be3017def1df4042fdb229c2a9733ac84089f"
+    },
+    "snapshot_tag": "phase5-poc-complete-v1"
+  },
+  "benchmark_name": "controlled_anomaly_benchmark_v1",
+  "benchmark_version": "ACTUAL_WITH_EVENTS",
+  "direct_event_scopes_overlap": false,
+  "events": [
+    {
+      "description": "Paseo volume shock during Q3 2014.",
+      "event_id": "EVT_001",
+      "event_type": "volume",
+      "expected_affected_metrics": [
+        "cogs",
+        "discount",
+        "ebitda",
+        "gross_profit",
+        "gross_sales",
+        "revenue",
+        "units"
+      ],
+      "expected_direction": {
+        "average_sale_price": "unchanged",
+        "cogs": "decrease",
+        "discount": "decrease",
+        "discount_rate": "unchanged",
+        "ebitda": "increase",
+        "gross_profit": "decrease",
+        "gross_sales": "decrease",
+        "revenue": "decrease",
+        "unit_cogs": "unchanged",
+        "units": "decrease"
+      },
+      "expected_unaffected_primary_metrics": [
+        "average_sale_price",
+        "discount_rate",
+        "unit_cogs"
+      ],
+      "filters": {
+        "country": "Mexico",
+        "product": "Paseo"
+      },
+      "matched_rows": 6,
+      "observed_impacts": [
+        {
+          "after": 34.272608614581394,
+          "before": 34.272608614581394,
+          "delta": 0.0,
+          "delta_pct": 0.0,
+          "direction": "unchanged",
+          "metric": "average_sale_price"
+        },
+        {
+          "after": 263452.64,
+          "before": 299378.0,
+          "delta": -35925.359999999986,
+          "delta_pct": -0.11999999999999995,
+          "direction": "decrease",
+          "metric": "cogs"
+        },
+        {
+          "after": 9884.0808,
+          "before": 11231.91,
+          "delta": -1347.8292000000001,
+          "delta_pct": -0.12000000000000001,
+          "direction": "decrease",
+          "metric": "discount"
+        },
+        {
+          "after": 0.0305540412613436,
+          "before": 0.030554041261343604,
+          "delta": -3.469446951953614e-18,
+          "delta_pct": -1.1355116405969814e-16,
+          "direction": "unchanged",
+          "metric": "discount_rate"
+        },
+        {
+          "after": -299933.1648621749,
+          "before": -302388.7105324939,
+          "delta": 2455.5456703189993,
+          "delta_pct": 0.008120493870273417,
+          "direction": "increase",
+          "metric": "ebitda"
+        },
+        {
+          "after": 50158.31920000003,
+          "before": 56998.09,
+          "delta": -6839.770799999969,
+          "delta_pct": -0.11999999999999947,
+          "direction": "decrease",
+          "metric": "gross_profit"
+        },
+        {
+          "after": 323495.04000000004,
+          "before": 367608.0,
+          "delta": -44112.95999999996,
+          "delta_pct": -0.1199999999999999,
+          "direction": "decrease",
+          "metric": "gross_sales"
+        },
+        {
+          "after": 313610.95920000004,
+          "before": 356376.09,
+          "delta": -42765.130799999984,
+          "delta_pct": -0.11999999999999995,
+          "direction": "decrease",
+          "metric": "revenue"
+        },
+        {
+          "after": 27.911430169681147,
+          "before": 27.91143016968115,
+          "delta": -3.552713678800501e-15,
+          "delta_pct": -1.2728526117087484e-16,
+          "direction": "unchanged",
+          "metric": "unit_cogs"
+        },
+        {
+          "after": 9438.880000000001,
+          "before": 10726.0,
+          "delta": -1287.119999999999,
+          "delta_pct": -0.1199999999999999,
+          "direction": "decrease",
+          "metric": "units"
+        }
+      ],
+      "operation": {
+        "type": "multiply",
+        "value": 0.88
+      },
+      "period_end": "2014-09-01",
+      "period_start": "2014-07-01",
+      "root_cause": "volume_decline"
+    },
+    {
+      "description": "Unit COGS inflation for VTT in Germany during Q4 2014.",
+      "event_id": "EVT_002",
+      "event_type": "unit_cogs",
+      "expected_affected_metrics": [
+        "cogs",
+        "ebitda",
+        "gross_profit",
+        "unit_cogs"
+      ],
+      "expected_direction": {
+        "average_sale_price": "unchanged",
+        "cogs": "increase",
+        "discount": "unchanged",
+        "discount_rate": "unchanged",
+        "ebitda": "decrease",
+        "gross_profit": "decrease",
+        "gross_sales": "unchanged",
+        "revenue": "unchanged",
+        "unit_cogs": "increase",
+        "units": "unchanged"
+      },
+      "expected_unaffected_primary_metrics": [
+        "average_sale_price",
+        "discount",
+        "discount_rate",
+        "gross_sales",
+        "revenue",
+        "units"
+      ],
+      "filters": {
+        "country": "Germany",
+        "product": "VTT"
+      },
+      "matched_rows": 4,
+      "observed_impacts": [
+        {
+          "after": 166.59409594095942,
+          "before": 166.59409594095942,
+          "delta": 0.0,
+          "delta_pct": 0.0,
+          "direction": "unchanged",
+          "metric": "average_sale_price"
+        },
+        {
+          "after": 912081.6000000001,
+          "before": 844520.0,
+          "delta": 67561.6000000001,
+          "delta_pct": 0.08000000000000011,
+          "direction": "increase",
+          "metric": "cogs"
+        },
+        {
+          "after": 37308.349999999984,
+          "before": 37308.349999999984,
+          "delta": 0.0,
+          "delta_pct": 0.0,
+          "direction": "unchanged",
+          "metric": "discount"
+        },
+        {
+          "after": 0.033054998117261376,
+          "before": 0.033054998117261376,
+          "delta": 0.0,
+          "delta_pct": 0.0,
+          "direction": "unchanged",
+          "metric": "discount_rate"
+        },
+        {
+          "after": -449887.94685596554,
+          "before": -382326.3468559655,
+          "delta": -67561.60000000003,
+          "delta_pct": -0.17671186031406996,
+          "direction": "decrease",
+          "metric": "ebitda"
+        },
+        {
+          "after": 179285.04999999996,
+          "before": 246846.65000000008,
+          "delta": -67561.60000000012,
+          "delta_pct": -0.27369867081445143,
+          "direction": "decrease",
+          "metric": "gross_profit"
+        },
+        {
+          "after": 1128675.0,
+          "before": 1128675.0,
+          "delta": 0.0,
+          "delta_pct": 0.0,
+          "direction": "unchanged",
+          "metric": "gross_sales"
+        },
+        {
+          "after": 1091366.6500000001,
+          "before": 1091366.6500000001,
+          "delta": 0.0,
+          "delta_pct": 0.0,
+          "direction": "unchanged",
+          "metric": "revenue"
+        },
+        {
+          "after": 134.6245904059041,
+          "before": 124.65239852398524,
+          "delta": 9.972191881918846,
+          "delta_pct": 0.08000000000000021,
+          "direction": "increase",
+          "metric": "unit_cogs"
+        },
+        {
+          "after": 6775.0,
+          "before": 6775.0,
+          "delta": 0.0,
+          "delta_pct": 0.0,
+          "direction": "unchanged",
+          "metric": "units"
+        }
+      ],
+      "operation": {
+        "type": "multiply",
+        "value": 1.08
+      },
+      "period_end": "2014-12-01",
+      "period_start": "2014-10-01",
+      "root_cause": "unit_cogs_increase"
+    },
+    {
+      "description": "Marketing overspend in France during FY2014.",
+      "event_id": "EVT_003",
+      "event_type": "opex",
+      "expected_affected_metrics": [
+        "ebitda",
+        "opex_marketing",
+        "opex_total"
+      ],
+      "expected_direction": {
+        "ebitda": "decrease",
+        "gross_profit": "unchanged",
+        "opex_marketing": "increase",
+        "opex_total": "increase",
+        "revenue": "unchanged"
+      },
+      "expected_unaffected_primary_metrics": [
+        "gross_profit",
+        "revenue"
+      ],
+      "filters": {
+        "country": "France",
+        "department": "Marketing"
+      },
+      "matched_rows": 12,
+      "observed_impacts": [
+        {
+          "after": -2199812.5005436707,
+          "before": -2021094.6306523231,
+          "delta": -178717.8698913476,
+          "delta_pct": -0.08842627513866834,
+          "direction": "decrease",
+          "metric": "ebitda"
+        },
+        {
+          "after": 2969688.6099999994,
+          "before": 2969688.6099999994,
+          "delta": 0.0,
+          "delta_pct": 0.0,
+          "direction": "unchanged",
+          "metric": "gross_profit"
+        },
+        {
+          "after": 1370170.3358336673,
+          "before": 1191452.465942319,
+          "delta": 178717.8698913483,
+          "delta_pct": 0.15000000000000038,
+          "direction": "increase",
+          "metric": "opex_marketing"
+        },
+        {
+          "after": 5169501.11054367,
+          "before": 4990783.240652323,
+          "delta": 178717.86989134736,
+          "delta_pct": 0.035809583641221804,
+          "direction": "increase",
+          "metric": "opex_total"
+        },
+        {
+          "after": 19221377.11,
+          "before": 19221377.11,
+          "delta": 0.0,
+          "delta_pct": 0.0,
+          "direction": "unchanged",
+          "metric": "revenue"
+        }
+      ],
+      "operation": {
+        "type": "multiply",
+        "value": 1.15
+      },
+      "period_end": "2014-12-01",
+      "period_start": "2014-01-01",
+      "root_cause": "marketing_overspend"
+    },
+    {
+      "description": "Amarilla discount rate increased by five percentage points in Q2 2014.",
+      "event_id": "EVT_004",
+      "event_type": "discount_rate",
+      "expected_affected_metrics": [
+        "discount",
+        "discount_rate",
+        "ebitda",
+        "gross_profit",
+        "revenue"
+      ],
+      "expected_direction": {
+        "average_sale_price": "unchanged",
+        "cogs": "unchanged",
+        "discount": "increase",
+        "discount_rate": "increase",
+        "ebitda": "decrease",
+        "gross_profit": "decrease",
+        "gross_sales": "unchanged",
+        "revenue": "decrease",
+        "unit_cogs": "unchanged",
+        "units": "unchanged"
+      },
+      "expected_unaffected_primary_metrics": [
+        "average_sale_price",
+        "cogs",
+        "gross_sales",
+        "unit_cogs",
+        "units"
+      ],
+      "filters": {
+        "country": "United States of America",
+        "product": "Amarilla"
+      },
+      "matched_rows": 3,
+      "observed_impacts": [
+        {
+          "after": 47.28744713999555,
+          "before": 47.28744713999555,
+          "delta": 0.0,
+          "delta_pct": 0.0,
+          "direction": "unchanged",
+          "metric": "average_sale_price"
+        },
+        {
+          "after": 374494.0,
+          "before": 374494.0,
+          "delta": 0.0,
+          "delta_pct": 0.0,
+          "direction": "unchanged",
+          "metric": "cogs"
+        },
+        {
+          "after": 74695.37000000001,
+          "before": 53449.12000000001,
+          "delta": 21246.25,
+          "delta_pct": 0.3975042058690582,
+          "direction": "increase",
+          "metric": "discount"
+        },
+        {
+          "after": 0.17578483261752076,
+          "before": 0.12578483261752077,
+          "delta": 0.04999999999999999,
+          "delta_pct": 0.3975042058690581,
+          "direction": "increase",
+          "metric": "discount_rate"
+        },
+        {
+          "after": -728455.5592816763,
+          "before": -712405.2391230378,
+          "delta": -16050.320158638526,
+          "delta_pct": -0.022529761541894715,
+          "direction": "decrease",
+          "metric": "ebitda"
+        },
+        {
+          "after": -24264.370000000003,
+          "before": -3018.1200000000026,
+          "delta": -21246.25,
+          "delta_pct": -7.039564364571317,
+          "direction": "decrease",
+          "metric": "gross_profit"
+        },
+        {
+          "after": 424925.0,
+          "before": 424925.0,
+          "delta": 0.0,
+          "delta_pct": 0.0,
+          "direction": "unchanged",
+          "metric": "gross_sales"
+        },
+        {
+          "after": 350229.63,
+          "before": 371475.88,
+          "delta": -21246.25,
+          "delta_pct": -0.05719415753184298,
+          "direction": "decrease",
+          "metric": "revenue"
+        },
+        {
+          "after": 41.67527264633875,
+          "before": 41.67527264633875,
+          "delta": 0.0,
+          "delta_pct": 0.0,
+          "direction": "unchanged",
+          "metric": "unit_cogs"
+        },
+        {
+          "after": 8986.0,
+          "before": 8986.0,
+          "delta": 0.0,
+          "delta_pct": 0.0,
+          "direction": "unchanged",
+          "metric": "units"
+        }
+      ],
+      "operation": {
+        "type": "add",
+        "value": 0.05
+      },
+      "period_end": "2014-06-01",
+      "period_start": "2014-04-01",
+      "root_cause": "discount_rate_increase"
+    }
+  ],
+  "events_are_cumulative": true
+}

@@ -1,0 +1,494 @@
+period_date,country,product,segment,version,units,average_sale_price,unit_cogs,discount_rate,average_manufacturing_price,source
+2014-01-01,Canada,Amarilla,Enterprise,ACTUAL_WITH_EVENTS,1659.0,125.0,120.0,0.13,260.0,controlled_event_benchmark_v1
+2014-01-01,Canada,Carretera,Government,ACTUAL_WITH_EVENTS,1618.5,20.0,10.0,0.0,3.0,controlled_event_benchmark_v1
+2014-01-01,Canada,Montana,Government,ACTUAL_WITH_EVENTS,2227.5,350.0,260.0,0.14,5.0,controlled_event_benchmark_v1
+2014-01-01,Canada,Paseo,Government,ACTUAL_WITH_EVENTS,4251.0,7.0,5.0,0.04,10.0,controlled_event_benchmark_v1
+2014-01-01,Canada,Paseo,Small Business,ACTUAL_WITH_EVENTS,873.0,300.0,250.0,0.11,10.0,controlled_event_benchmark_v1
+2014-01-01,Canada,VTT,Channel Partners,ACTUAL_WITH_EVENTS,3244.5,12.0,3.0,0.07,250.0,controlled_event_benchmark_v1
+2014-01-01,Canada,Velo,Midmarket,ACTUAL_WITH_EVENTS,384.0,15.0,10.0,0.1099999999999999,120.0,controlled_event_benchmark_v1
+2014-01-01,France,Amarilla,Enterprise,ACTUAL_WITH_EVENTS,1987.5,125.0,120.0,0.06,260.0,controlled_event_benchmark_v1
+2014-01-01,France,Carretera,Government,ACTUAL_WITH_EVENTS,2521.5,20.0,10.0,0.12,3.0,controlled_event_benchmark_v1
+2014-01-01,France,Montana,Government,ACTUAL_WITH_EVENTS,1384.5,350.0,260.0,0.05,5.0,controlled_event_benchmark_v1
+2014-01-01,France,Paseo,Government,ACTUAL_WITH_EVENTS,3945.0,7.0,5.0,0.0099999999999999,10.0,controlled_event_benchmark_v1
+2014-01-01,France,Paseo,Small Business,ACTUAL_WITH_EVENTS,2434.5,300.0,250.0,0.03,10.0,controlled_event_benchmark_v1
+2014-01-01,France,VTT,Channel Partners,ACTUAL_WITH_EVENTS,1734.0,12.0,3.0,0.11,250.0,controlled_event_benchmark_v1
+2014-01-01,France,Velo,Midmarket,ACTUAL_WITH_EVENTS,3997.5,15.0,10.0,0.13,120.0,controlled_event_benchmark_v1
+2014-01-01,Germany,Amarilla,Enterprise,ACTUAL_WITH_EVENTS,3165.0,125.0,120.0,0.11,260.0,controlled_event_benchmark_v1
+2014-01-01,Germany,Carretera,Government,ACTUAL_WITH_EVENTS,1321.0,20.0,10.0,0.0,3.0,controlled_event_benchmark_v1
+2014-01-01,Germany,Montana,Government,ACTUAL_WITH_EVENTS,766.0,350.0,260.0,0.11,5.0,controlled_event_benchmark_v1
+2014-01-01,Germany,Paseo,Government,ACTUAL_WITH_EVENTS,1372.0,7.0,5.0,0.0499999999999999,10.0,controlled_event_benchmark_v1
+2014-01-01,Germany,Paseo,Small Business,ACTUAL_WITH_EVENTS,807.0,300.0,250.0,0.13,10.0,controlled_event_benchmark_v1
+2014-01-01,Germany,VTT,Channel Partners,ACTUAL_WITH_EVENTS,2479.0,12.0,3.0,0.03,250.0,controlled_event_benchmark_v1
+2014-01-01,Germany,Velo,Midmarket,ACTUAL_WITH_EVENTS,681.0,15.0,10.0,0.1,120.0,controlled_event_benchmark_v1
+2014-01-01,Mexico,Amarilla,Government,ACTUAL_WITH_EVENTS,2629.0,20.0,10.0,0.11,260.0,controlled_event_benchmark_v1
+2014-01-01,Mexico,Montana,Channel Partners,ACTUAL_WITH_EVENTS,2340.0,12.0,3.0,0.0699999999999999,5.0,controlled_event_benchmark_v1
+2014-01-01,Mexico,Paseo,Government,ACTUAL_WITH_EVENTS,2417.0,350.0,260.0,0.09,10.0,controlled_event_benchmark_v1
+2014-01-01,Mexico,Paseo,Small Business,ACTUAL_WITH_EVENTS,2565.0,300.0,250.0,0.09,10.0,controlled_event_benchmark_v1
+2014-01-01,Mexico,VTT,Enterprise,ACTUAL_WITH_EVENTS,554.0,125.0,120.0,0.11,250.0,controlled_event_benchmark_v1
+2014-01-01,Mexico,Velo,Government,ACTUAL_WITH_EVENTS,1493.0,7.0,5.0,0.0,120.0,controlled_event_benchmark_v1
+2014-01-01,Mexico,Velo,Midmarket,ACTUAL_WITH_EVENTS,2861.0,15.0,10.0,0.05,120.0,controlled_event_benchmark_v1
+2014-01-01,United States of America,Amarilla,Enterprise,ACTUAL_WITH_EVENTS,579.0,125.0,120.0,0.1,260.0,controlled_event_benchmark_v1
+2014-01-01,United States of America,Carretera,Government,ACTUAL_WITH_EVENTS,1117.5,20.0,10.0,0.06,3.0,controlled_event_benchmark_v1
+2014-01-01,United States of America,Montana,Government,ACTUAL_WITH_EVENTS,982.5,350.0,260.0,0.13,5.0,controlled_event_benchmark_v1
+2014-01-01,United States of America,Paseo,Government,ACTUAL_WITH_EVENTS,1438.5,7.0,5.0,0.13,10.0,controlled_event_benchmark_v1
+2014-01-01,United States of America,Paseo,Small Business,ACTUAL_WITH_EVENTS,3495.0,300.0,250.0,0.12,10.0,controlled_event_benchmark_v1
+2014-01-01,United States of America,VTT,Channel Partners,ACTUAL_WITH_EVENTS,1956.0,12.0,3.0,0.09,250.0,controlled_event_benchmark_v1
+2014-01-01,United States of America,Velo,Midmarket,ACTUAL_WITH_EVENTS,555.0,15.0,10.0,0.05,120.0,controlled_event_benchmark_v1
+2014-02-01,Canada,Amarilla,Government,ACTUAL_WITH_EVENTS,2240.0,350.0,260.0,0.1,260.0,controlled_event_benchmark_v1
+2014-02-01,Canada,Carretera,Channel Partners,ACTUAL_WITH_EVENTS,1937.0,12.0,3.0,0.11,3.0,controlled_event_benchmark_v1
+2014-02-01,Canada,Montana,Government,ACTUAL_WITH_EVENTS,488.0,7.0,5.0,0.0799999999999999,5.0,controlled_event_benchmark_v1
+2014-02-01,Canada,Paseo,Government,ACTUAL_WITH_EVENTS,292.0,20.0,10.0,0.0,10.0,controlled_event_benchmark_v1
+2014-02-01,Canada,Paseo,Midmarket,ACTUAL_WITH_EVENTS,2363.0,15.0,10.0,0.02,10.0,controlled_event_benchmark_v1
+2014-02-01,Canada,VTT,Small Business,ACTUAL_WITH_EVENTS,2001.0,300.0,250.0,0.0,250.0,controlled_event_benchmark_v1
+2014-02-01,Canada,Velo,Enterprise,ACTUAL_WITH_EVENTS,952.0,125.0,120.0,0.06,120.0,controlled_event_benchmark_v1
+2014-02-01,France,Amarilla,Government,ACTUAL_WITH_EVENTS,2750.0,350.0,260.0,0.0,260.0,controlled_event_benchmark_v1
+2014-02-01,France,Carretera,Channel Partners,ACTUAL_WITH_EVENTS,1865.0,12.0,3.0,0.05,3.0,controlled_event_benchmark_v1
+2014-02-01,France,Montana,Government,ACTUAL_WITH_EVENTS,293.0,7.0,5.0,0.1399999999999999,5.0,controlled_event_benchmark_v1
+2014-02-01,France,Paseo,Government,ACTUAL_WITH_EVENTS,1303.0,20.0,10.0,0.05,10.0,controlled_event_benchmark_v1
+2014-02-01,France,Paseo,Midmarket,ACTUAL_WITH_EVENTS,2296.0,15.0,10.0,0.0099999999999999,10.0,controlled_event_benchmark_v1
+2014-02-01,France,VTT,Small Business,ACTUAL_WITH_EVENTS,959.0,300.0,250.0,0.07,250.0,controlled_event_benchmark_v1
+2014-02-01,France,Velo,Enterprise,ACTUAL_WITH_EVENTS,1804.0,125.0,120.0,0.0,120.0,controlled_event_benchmark_v1
+2014-02-01,Germany,Amarilla,Government,ACTUAL_WITH_EVENTS,1350.0,350.0,260.0,0.05,260.0,controlled_event_benchmark_v1
+2014-02-01,Germany,Carretera,Channel Partners,ACTUAL_WITH_EVENTS,1116.0,12.0,3.0,0.05,3.0,controlled_event_benchmark_v1
+2014-02-01,Germany,Montana,Government,ACTUAL_WITH_EVENTS,1958.0,7.0,5.0,0.03,5.0,controlled_event_benchmark_v1
+2014-02-01,Germany,Paseo,Government,ACTUAL_WITH_EVENTS,2708.0,20.0,10.0,0.13,10.0,controlled_event_benchmark_v1
+2014-02-01,Germany,Paseo,Midmarket,ACTUAL_WITH_EVENTS,278.0,15.0,10.0,0.1399999999999999,10.0,controlled_event_benchmark_v1
+2014-02-01,Germany,VTT,Small Business,ACTUAL_WITH_EVENTS,2659.0,300.0,250.0,0.09,250.0,controlled_event_benchmark_v1
+2014-02-01,Germany,Velo,Enterprise,ACTUAL_WITH_EVENTS,807.0,125.0,120.0,0.05,120.0,controlled_event_benchmark_v1
+2014-02-01,Mexico,Amarilla,Government,ACTUAL_WITH_EVENTS,1865.0,350.0,260.0,0.04,260.0,controlled_event_benchmark_v1
+2014-02-01,Mexico,Carretera,Channel Partners,ACTUAL_WITH_EVENTS,727.0,12.0,3.0,0.0699999999999999,3.0,controlled_event_benchmark_v1
+2014-02-01,Mexico,Montana,Government,ACTUAL_WITH_EVENTS,1368.0,7.0,5.0,0.15,5.0,controlled_event_benchmark_v1
+2014-02-01,Mexico,Paseo,Government,ACTUAL_WITH_EVENTS,260.0,20.0,10.0,0.14,10.0,controlled_event_benchmark_v1
+2014-02-01,Mexico,Paseo,Midmarket,ACTUAL_WITH_EVENTS,974.0,15.0,10.0,0.0,10.0,controlled_event_benchmark_v1
+2014-02-01,Mexico,VTT,Small Business,ACTUAL_WITH_EVENTS,2747.0,300.0,250.0,0.07,250.0,controlled_event_benchmark_v1
+2014-02-01,Mexico,Velo,Enterprise,ACTUAL_WITH_EVENTS,1575.0,125.0,120.0,0.14,120.0,controlled_event_benchmark_v1
+2014-02-01,United States of America,Amarilla,Government,ACTUAL_WITH_EVENTS,270.0,350.0,260.0,0.12,260.0,controlled_event_benchmark_v1
+2014-02-01,United States of America,Carretera,Channel Partners,ACTUAL_WITH_EVENTS,1858.0,12.0,3.0,0.01,3.0,controlled_event_benchmark_v1
+2014-02-01,United States of America,Montana,Government,ACTUAL_WITH_EVENTS,1298.0,7.0,5.0,0.13,5.0,controlled_event_benchmark_v1
+2014-02-01,United States of America,Paseo,Government,ACTUAL_WITH_EVENTS,2641.0,20.0,10.0,0.13,10.0,controlled_event_benchmark_v1
+2014-02-01,United States of America,Paseo,Midmarket,ACTUAL_WITH_EVENTS,1514.0,15.0,10.0,0.01,10.0,controlled_event_benchmark_v1
+2014-02-01,United States of America,VTT,Small Business,ACTUAL_WITH_EVENTS,2844.0,300.0,250.0,0.03,250.0,controlled_event_benchmark_v1
+2014-02-01,United States of America,Velo,Enterprise,ACTUAL_WITH_EVENTS,2755.0,125.0,120.0,0.06,120.0,controlled_event_benchmark_v1
+2014-03-01,Canada,Amarilla,Small Business,ACTUAL_WITH_EVENTS,888.0,300.0,250.0,0.14,260.0,controlled_event_benchmark_v1
+2014-03-01,Canada,Carretera,Government,ACTUAL_WITH_EVENTS,923.0,350.0,260.0,0.13,3.0,controlled_event_benchmark_v1
+2014-03-01,Canada,Montana,Midmarket,ACTUAL_WITH_EVENTS,1967.0,15.0,10.0,0.04,5.0,controlled_event_benchmark_v1
+2014-03-01,Canada,Paseo,Enterprise,ACTUAL_WITH_EVENTS,1774.0,125.0,120.0,0.03,10.0,controlled_event_benchmark_v1
+2014-03-01,Canada,Paseo,Government,ACTUAL_WITH_EVENTS,2428.0,20.0,10.0,0.1399999999999999,10.0,controlled_event_benchmark_v1
+2014-03-01,Canada,VTT,Government,ACTUAL_WITH_EVENTS,1326.0,7.0,5.0,0.0099999999999999,250.0,controlled_event_benchmark_v1
+2014-03-01,Canada,Velo,Channel Partners,ACTUAL_WITH_EVENTS,598.0,12.0,3.0,0.08,120.0,controlled_event_benchmark_v1
+2014-03-01,France,Amarilla,Small Business,ACTUAL_WITH_EVENTS,2475.0,300.0,250.0,0.15,260.0,controlled_event_benchmark_v1
+2014-03-01,France,Carretera,Government,ACTUAL_WITH_EVENTS,1790.0,350.0,260.0,0.13,3.0,controlled_event_benchmark_v1
+2014-03-01,France,Montana,Midmarket,ACTUAL_WITH_EVENTS,2501.0,15.0,10.0,0.08,5.0,controlled_event_benchmark_v1
+2014-03-01,France,Paseo,Enterprise,ACTUAL_WITH_EVENTS,2385.0,125.0,120.0,0.05,10.0,controlled_event_benchmark_v1
+2014-03-01,France,Paseo,Government,ACTUAL_WITH_EVENTS,1954.0,20.0,10.0,0.1,10.0,controlled_event_benchmark_v1
+2014-03-01,France,VTT,Government,ACTUAL_WITH_EVENTS,1491.0,7.0,5.0,0.12,250.0,controlled_event_benchmark_v1
+2014-03-01,France,Velo,Channel Partners,ACTUAL_WITH_EVENTS,1967.0,12.0,3.0,0.09,120.0,controlled_event_benchmark_v1
+2014-03-01,Germany,Amarilla,Small Business,ACTUAL_WITH_EVENTS,259.0,300.0,250.0,0.02,260.0,controlled_event_benchmark_v1
+2014-03-01,Germany,Carretera,Government,ACTUAL_WITH_EVENTS,792.0,350.0,260.0,0.11,3.0,controlled_event_benchmark_v1
+2014-03-01,Germany,Montana,Midmarket,ACTUAL_WITH_EVENTS,921.0,15.0,10.0,0.0,5.0,controlled_event_benchmark_v1
+2014-03-01,Germany,Paseo,Enterprise,ACTUAL_WITH_EVENTS,795.0,125.0,120.0,0.04,10.0,controlled_event_benchmark_v1
+2014-03-01,Germany,Paseo,Government,ACTUAL_WITH_EVENTS,1158.0,20.0,10.0,0.15,10.0,controlled_event_benchmark_v1
+2014-03-01,Germany,VTT,Government,ACTUAL_WITH_EVENTS,263.0,7.0,5.0,0.01,250.0,controlled_event_benchmark_v1
+2014-03-01,Germany,Velo,Channel Partners,ACTUAL_WITH_EVENTS,2161.0,12.0,3.0,0.0,120.0,controlled_event_benchmark_v1
+2014-03-01,Mexico,Amarilla,Small Business,ACTUAL_WITH_EVENTS,1101.0,300.0,250.0,0.02,260.0,controlled_event_benchmark_v1
+2014-03-01,Mexico,Carretera,Government,ACTUAL_WITH_EVENTS,1210.0,350.0,260.0,0.01,3.0,controlled_event_benchmark_v1
+2014-03-01,Mexico,Montana,Midmarket,ACTUAL_WITH_EVENTS,2214.0,15.0,10.0,0.01,5.0,controlled_event_benchmark_v1
+2014-03-01,Mexico,Paseo,Enterprise,ACTUAL_WITH_EVENTS,1114.0,125.0,120.0,0.08,10.0,controlled_event_benchmark_v1
+2014-03-01,Mexico,Paseo,Government,ACTUAL_WITH_EVENTS,1122.0,20.0,10.0,0.11,10.0,controlled_event_benchmark_v1
+2014-03-01,Mexico,VTT,Government,ACTUAL_WITH_EVENTS,2903.0,7.0,5.0,0.14,250.0,controlled_event_benchmark_v1
+2014-03-01,Mexico,Velo,Channel Partners,ACTUAL_WITH_EVENTS,500.0,12.0,3.0,0.15,120.0,controlled_event_benchmark_v1
+2014-03-01,United States of America,Amarilla,Small Business,ACTUAL_WITH_EVENTS,2993.0,300.0,250.0,0.1,260.0,controlled_event_benchmark_v1
+2014-03-01,United States of America,Carretera,Government,ACTUAL_WITH_EVENTS,1761.0,350.0,260.0,0.07,3.0,controlled_event_benchmark_v1
+2014-03-01,United States of America,Montana,Midmarket,ACTUAL_WITH_EVENTS,677.0,15.0,10.0,0.12,5.0,controlled_event_benchmark_v1
+2014-03-01,United States of America,Paseo,Enterprise,ACTUAL_WITH_EVENTS,2992.0,125.0,120.0,0.05,10.0,controlled_event_benchmark_v1
+2014-03-01,United States of America,Paseo,Government,ACTUAL_WITH_EVENTS,973.0,20.0,10.0,0.09,10.0,controlled_event_benchmark_v1
+2014-03-01,United States of America,VTT,Government,ACTUAL_WITH_EVENTS,1579.0,7.0,5.0,0.1099999999999999,250.0,controlled_event_benchmark_v1
+2014-03-01,United States of America,Velo,Channel Partners,ACTUAL_WITH_EVENTS,1465.0,12.0,3.0,0.04,120.0,controlled_event_benchmark_v1
+2014-04-01,Canada,Amarilla,Channel Partners,ACTUAL_WITH_EVENTS,3520.5,12.0,3.0,0.1,260.0,controlled_event_benchmark_v1
+2014-04-01,Canada,Carretera,Enterprise,ACTUAL_WITH_EVENTS,742.5,125.0,120.0,0.02,3.0,controlled_event_benchmark_v1
+2014-04-01,Canada,Montana,Small Business,ACTUAL_WITH_EVENTS,3802.5,300.0,250.0,0.09,5.0,controlled_event_benchmark_v1
+2014-04-01,Canada,Paseo,Government,ACTUAL_WITH_EVENTS,723.0,7.0,5.0,0.15,10.0,controlled_event_benchmark_v1
+2014-04-01,Canada,Paseo,Midmarket,ACTUAL_WITH_EVENTS,1614.0,15.0,10.0,0.15,10.0,controlled_event_benchmark_v1
+2014-04-01,Canada,VTT,Government,ACTUAL_WITH_EVENTS,943.5,350.0,260.0,0.01,250.0,controlled_event_benchmark_v1
+2014-04-01,Canada,Velo,Government,ACTUAL_WITH_EVENTS,3850.5,20.0,10.0,0.03,120.0,controlled_event_benchmark_v1
+2014-04-01,France,Carretera,Enterprise,ACTUAL_WITH_EVENTS,4243.5,125.0,120.0,0.03,3.0,controlled_event_benchmark_v1
+2014-04-01,France,Montana,Small Business,ACTUAL_WITH_EVENTS,1773.0,300.0,250.0,0.12,5.0,controlled_event_benchmark_v1
+2014-04-01,France,Paseo,Government,ACTUAL_WITH_EVENTS,2532.0,7.0,5.0,0.1099999999999999,10.0,controlled_event_benchmark_v1
+2014-04-01,France,Paseo,Midmarket,ACTUAL_WITH_EVENTS,3801.0,15.0,10.0,0.0599999999999999,10.0,controlled_event_benchmark_v1
+2014-04-01,France,VTT,Channel Partners,ACTUAL_WITH_EVENTS,1738.5,12.0,3.0,0.0699999999999999,250.0,controlled_event_benchmark_v1
+2014-04-01,France,VTT,Government,ACTUAL_WITH_EVENTS,574.5,350.0,260.0,0.08,250.0,controlled_event_benchmark_v1
+2014-04-01,France,Velo,Government,ACTUAL_WITH_EVENTS,3864.0,20.0,10.0,0.01,120.0,controlled_event_benchmark_v1
+2014-04-01,Germany,Amarilla,Enterprise,ACTUAL_WITH_EVENTS,4219.5,125.0,120.0,0.0,260.0,controlled_event_benchmark_v1
+2014-04-01,Germany,Carretera,Government,ACTUAL_WITH_EVENTS,2580.0,20.0,10.0,0.03,3.0,controlled_event_benchmark_v1
+2014-04-01,Germany,Montana,Government,ACTUAL_WITH_EVENTS,1199.0,350.0,260.0,0.14,5.0,controlled_event_benchmark_v1
+2014-04-01,Germany,Paseo,Government,ACTUAL_WITH_EVENTS,1259.0,7.0,5.0,0.08,10.0,controlled_event_benchmark_v1
+2014-04-01,Germany,Paseo,Small Business,ACTUAL_WITH_EVENTS,1414.5,300.0,250.0,0.04,10.0,controlled_event_benchmark_v1
+2014-04-01,Germany,VTT,Channel Partners,ACTUAL_WITH_EVENTS,2838.0,12.0,3.0,0.0,250.0,controlled_event_benchmark_v1
+2014-04-01,Germany,Velo,Midmarket,ACTUAL_WITH_EVENTS,510.0,15.0,10.0,0.1,120.0,controlled_event_benchmark_v1
+2014-04-01,Mexico,Amarilla,Enterprise,ACTUAL_WITH_EVENTS,1074.0,125.0,120.0,0.04,260.0,controlled_event_benchmark_v1
+2014-04-01,Mexico,Carretera,Government,ACTUAL_WITH_EVENTS,2579.0,20.0,10.0,0.1399999999999999,3.0,controlled_event_benchmark_v1
+2014-04-01,Mexico,Montana,Government,ACTUAL_WITH_EVENTS,980.0,350.0,260.0,0.06,5.0,controlled_event_benchmark_v1
+2014-04-01,Mexico,Paseo,Government,ACTUAL_WITH_EVENTS,2535.0,7.0,5.0,0.15,10.0,controlled_event_benchmark_v1
+2014-04-01,Mexico,Paseo,Small Business,ACTUAL_WITH_EVENTS,1607.0,300.0,250.0,0.05,10.0,controlled_event_benchmark_v1
+2014-04-01,Mexico,VTT,Channel Partners,ACTUAL_WITH_EVENTS,1916.0,12.0,3.0,0.03,250.0,controlled_event_benchmark_v1
+2014-04-01,Mexico,Velo,Midmarket,ACTUAL_WITH_EVENTS,2628.0,15.0,10.0,0.09,120.0,controlled_event_benchmark_v1
+2014-04-01,United States of America,Amarilla,Channel Partners,ACTUAL_WITH_EVENTS,1953.0,12.0,3.0,0.05,260.0,controlled_event_benchmark_v1
+2014-04-01,United States of America,Carretera,Enterprise,ACTUAL_WITH_EVENTS,3445.5,125.0,120.0,0.1,3.0,controlled_event_benchmark_v1
+2014-04-01,United States of America,Montana,Small Business,ACTUAL_WITH_EVENTS,2301.0,300.0,250.0,0.01,5.0,controlled_event_benchmark_v1
+2014-04-01,United States of America,Paseo,Government,ACTUAL_WITH_EVENTS,4492.5,7.0,5.0,0.01,10.0,controlled_event_benchmark_v1
+2014-04-01,United States of America,Paseo,Midmarket,ACTUAL_WITH_EVENTS,3675.0,15.0,10.0,0.09,10.0,controlled_event_benchmark_v1
+2014-04-01,United States of America,VTT,Government,ACTUAL_WITH_EVENTS,1351.5,350.0,260.0,0.09,250.0,controlled_event_benchmark_v1
+2014-04-01,United States of America,Velo,Government,ACTUAL_WITH_EVENTS,606.0,20.0,10.0,0.14,120.0,controlled_event_benchmark_v1
+2014-05-01,Canada,Amarilla,Enterprise,ACTUAL_WITH_EVENTS,1645.0,125.0,120.0,0.07,260.0,controlled_event_benchmark_v1
+2014-05-01,Canada,Carretera,Government,ACTUAL_WITH_EVENTS,831.0,20.0,10.0,0.03,3.0,controlled_event_benchmark_v1
+2014-05-01,Canada,Montana,Government,ACTUAL_WITH_EVENTS,200.0,350.0,260.0,0.14,5.0,controlled_event_benchmark_v1
+2014-05-01,Canada,Paseo,Government,ACTUAL_WITH_EVENTS,257.0,7.0,5.0,0.0799999999999999,10.0,controlled_event_benchmark_v1
+2014-05-01,Canada,Paseo,Small Business,ACTUAL_WITH_EVENTS,1702.0,300.0,250.0,0.07,10.0,controlled_event_benchmark_v1
+2014-05-01,Canada,VTT,Channel Partners,ACTUAL_WITH_EVENTS,2109.0,12.0,3.0,0.12,250.0,controlled_event_benchmark_v1
+2014-05-01,Canada,Velo,Midmarket,ACTUAL_WITH_EVENTS,1262.0,15.0,10.0,0.0699999999999999,120.0,controlled_event_benchmark_v1
+2014-05-01,France,Amarilla,Enterprise,ACTUAL_WITH_EVENTS,1433.0,125.0,120.0,0.11,260.0,controlled_event_benchmark_v1
+2014-05-01,France,Carretera,Government,ACTUAL_WITH_EVENTS,1563.0,20.0,10.0,0.05,3.0,controlled_event_benchmark_v1
+2014-05-01,France,Montana,Government,ACTUAL_WITH_EVENTS,1666.0,350.0,260.0,0.09,5.0,controlled_event_benchmark_v1
+2014-05-01,France,Paseo,Government,ACTUAL_WITH_EVENTS,1030.0,7.0,5.0,0.0099999999999999,10.0,controlled_event_benchmark_v1
+2014-05-01,France,Paseo,Small Business,ACTUAL_WITH_EVENTS,918.0,300.0,250.0,0.02,10.0,controlled_event_benchmark_v1
+2014-05-01,France,VTT,Channel Partners,ACTUAL_WITH_EVENTS,866.0,12.0,3.0,0.04,250.0,controlled_event_benchmark_v1
+2014-05-01,France,Velo,Midmarket,ACTUAL_WITH_EVENTS,2826.0,15.0,10.0,0.15,120.0,controlled_event_benchmark_v1
+2014-05-01,Germany,Amarilla,Enterprise,ACTUAL_WITH_EVENTS,2276.0,125.0,120.0,0.02,260.0,controlled_event_benchmark_v1
+2014-05-01,Germany,Carretera,Government,ACTUAL_WITH_EVENTS,663.0,20.0,10.0,0.09,3.0,controlled_event_benchmark_v1
+2014-05-01,Germany,Montana,Government,ACTUAL_WITH_EVENTS,1460.0,350.0,260.0,0.06,5.0,controlled_event_benchmark_v1
+2014-05-01,Germany,Paseo,Government,ACTUAL_WITH_EVENTS,1095.0,7.0,5.0,0.08,10.0,controlled_event_benchmark_v1
+2014-05-01,Germany,Paseo,Small Business,ACTUAL_WITH_EVENTS,1728.0,300.0,250.0,0.02,10.0,controlled_event_benchmark_v1
+2014-05-01,Germany,VTT,Channel Partners,ACTUAL_WITH_EVENTS,880.0,12.0,3.0,0.09,250.0,controlled_event_benchmark_v1
+2014-05-01,Germany,Velo,Midmarket,ACTUAL_WITH_EVENTS,1530.0,15.0,10.0,0.06,120.0,controlled_event_benchmark_v1
+2014-05-01,Mexico,Amarilla,Government,ACTUAL_WITH_EVENTS,2039.0,20.0,10.0,0.1,260.0,controlled_event_benchmark_v1
+2014-05-01,Mexico,Montana,Channel Partners,ACTUAL_WITH_EVENTS,2661.0,12.0,3.0,0.12,5.0,controlled_event_benchmark_v1
+2014-05-01,Mexico,Paseo,Government,ACTUAL_WITH_EVENTS,2851.0,350.0,260.0,0.15,10.0,controlled_event_benchmark_v1
+2014-05-01,Mexico,Paseo,Small Business,ACTUAL_WITH_EVENTS,591.0,300.0,250.0,0.1,10.0,controlled_event_benchmark_v1
+2014-05-01,Mexico,VTT,Enterprise,ACTUAL_WITH_EVENTS,341.0,125.0,120.0,0.1,250.0,controlled_event_benchmark_v1
+2014-05-01,Mexico,Velo,Government,ACTUAL_WITH_EVENTS,362.0,7.0,5.0,0.01,120.0,controlled_event_benchmark_v1
+2014-05-01,Mexico,Velo,Midmarket,ACTUAL_WITH_EVENTS,245.0,15.0,10.0,0.09,120.0,controlled_event_benchmark_v1
+2014-05-01,United States of America,Amarilla,Enterprise,ACTUAL_WITH_EVENTS,2844.0,125.0,120.0,0.19,260.0,controlled_event_benchmark_v1
+2014-05-01,United States of America,Carretera,Government,ACTUAL_WITH_EVENTS,1743.0,20.0,10.0,0.1399999999999999,3.0,controlled_event_benchmark_v1
+2014-05-01,United States of America,Montana,Government,ACTUAL_WITH_EVENTS,2313.0,350.0,260.0,0.1,5.0,controlled_event_benchmark_v1
+2014-05-01,United States of America,Paseo,Government,ACTUAL_WITH_EVENTS,2327.0,7.0,5.0,0.05,10.0,controlled_event_benchmark_v1
+2014-05-01,United States of America,Paseo,Small Business,ACTUAL_WITH_EVENTS,2918.0,300.0,250.0,0.04,10.0,controlled_event_benchmark_v1
+2014-05-01,United States of America,VTT,Channel Partners,ACTUAL_WITH_EVENTS,1806.0,12.0,3.0,0.15,250.0,controlled_event_benchmark_v1
+2014-05-01,United States of America,Velo,Midmarket,ACTUAL_WITH_EVENTS,790.0,15.0,10.0,0.1,120.0,controlled_event_benchmark_v1
+2014-06-01,Canada,Amarilla,Government,ACTUAL_WITH_EVENTS,1843.0,11.994031470428649,6.92078133478025,0.0764057905451255,260.0,controlled_event_benchmark_v1
+2014-06-01,Canada,Carretera,Midmarket,ACTUAL_WITH_EVENTS,2844.0,15.0,10.0,0.06,3.0,controlled_event_benchmark_v1
+2014-06-01,Canada,Carretera,Small Business,ACTUAL_WITH_EVENTS,1094.0,300.0,250.0,0.09,3.0,controlled_event_benchmark_v1
+2014-06-01,Canada,Montana,Channel Partners,ACTUAL_WITH_EVENTS,2518.0,12.0,3.0,0.0,5.0,controlled_event_benchmark_v1
+2014-06-01,Canada,Montana,Government,ACTUAL_WITH_EVENTS,708.0,20.0,10.0,0.08,5.0,controlled_event_benchmark_v1
+2014-06-01,Canada,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,2518.0,12.0,3.0,0.0,10.0,controlled_event_benchmark_v1
+2014-06-01,Canada,Paseo,Enterprise,ACTUAL_WITH_EVENTS,1583.0,125.0,120.0,0.13,10.0,controlled_event_benchmark_v1
+2014-06-01,Canada,Paseo,Government,ACTUAL_WITH_EVENTS,2632.0,350.0,260.0,0.13,10.0,controlled_event_benchmark_v1
+2014-06-01,Canada,Paseo,Small Business,ACTUAL_WITH_EVENTS,1094.0,300.0,250.0,0.09,10.0,controlled_event_benchmark_v1
+2014-06-01,Canada,VTT,Enterprise,ACTUAL_WITH_EVENTS,1583.0,125.0,120.0,0.13,250.0,controlled_event_benchmark_v1
+2014-06-01,Canada,VTT,Midmarket,ACTUAL_WITH_EVENTS,2844.0,15.0,10.0,0.06,250.0,controlled_event_benchmark_v1
+2014-06-01,Canada,Velo,Government,ACTUAL_WITH_EVENTS,3767.0,246.6538359437218,183.1683036899389,0.1294869476777037,120.0,controlled_event_benchmark_v1
+2014-06-01,France,Amarilla,Government,ACTUAL_WITH_EVENTS,3089.0,14.991906765943671,8.07381029459372,0.0233837184193478,260.0,controlled_event_benchmark_v1
+2014-06-01,France,Carretera,Midmarket,ACTUAL_WITH_EVENTS,2178.0,15.0,10.0,0.0,3.0,controlled_event_benchmark_v1
+2014-06-01,France,Carretera,Small Business,ACTUAL_WITH_EVENTS,448.0,300.0,250.0,0.07,3.0,controlled_event_benchmark_v1
+2014-06-01,France,Montana,Channel Partners,ACTUAL_WITH_EVENTS,1901.0,12.0,3.0,0.03,5.0,controlled_event_benchmark_v1
+2014-06-01,France,Montana,Government,ACTUAL_WITH_EVENTS,1899.0,20.0,10.0,0.0,5.0,controlled_event_benchmark_v1
+2014-06-01,France,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,1901.0,12.0,3.0,0.03,10.0,controlled_event_benchmark_v1
+2014-06-01,France,Paseo,Enterprise,ACTUAL_WITH_EVENTS,787.0,125.0,120.0,0.01,10.0,controlled_event_benchmark_v1
+2014-06-01,France,Paseo,Government,ACTUAL_WITH_EVENTS,1496.0,350.0,260.0,0.06,10.0,controlled_event_benchmark_v1
+2014-06-01,France,Paseo,Small Business,ACTUAL_WITH_EVENTS,448.0,300.0,250.0,0.07,10.0,controlled_event_benchmark_v1
+2014-06-01,France,VTT,Enterprise,ACTUAL_WITH_EVENTS,787.0,125.0,120.0,0.01,250.0,controlled_event_benchmark_v1
+2014-06-01,France,VTT,Midmarket,ACTUAL_WITH_EVENTS,2178.0,15.0,10.0,0.0,250.0,controlled_event_benchmark_v1
+2014-06-01,France,Velo,Government,ACTUAL_WITH_EVENTS,2686.0,198.0379746835443,147.0253164556962,0.0610961968680089,120.0,controlled_event_benchmark_v1
+2014-06-01,Germany,Amarilla,Government,ACTUAL_WITH_EVENTS,1366.0,20.0,10.0,0.08,260.0,controlled_event_benchmark_v1
+2014-06-01,Germany,Carretera,Midmarket,ACTUAL_WITH_EVENTS,888.0,15.0,10.0,0.0,3.0,controlled_event_benchmark_v1
+2014-06-01,Germany,Carretera,Small Business,ACTUAL_WITH_EVENTS,689.0,300.0,250.0,0.03,3.0,controlled_event_benchmark_v1
+2014-06-01,Germany,Montana,Channel Partners,ACTUAL_WITH_EVENTS,1545.0,12.0,3.0,0.0,5.0,controlled_event_benchmark_v1
+2014-06-01,Germany,Paseo,Enterprise,ACTUAL_WITH_EVENTS,1570.0,125.0,120.0,0.03,10.0,controlled_event_benchmark_v1
+2014-06-01,Germany,Paseo,Government,ACTUAL_WITH_EVENTS,2372.0,159.95784148397976,116.02866779089376,0.0057603710927204,10.0,controlled_event_benchmark_v1
+2014-06-01,Germany,Paseo,Small Business,ACTUAL_WITH_EVENTS,689.0,300.0,250.0,0.03,10.0,controlled_event_benchmark_v1
+2014-06-01,Germany,VTT,Enterprise,ACTUAL_WITH_EVENTS,1570.0,125.0,120.0,0.03,250.0,controlled_event_benchmark_v1
+2014-06-01,Germany,VTT,Government,ACTUAL_WITH_EVENTS,2338.0,7.0,5.0,0.08,250.0,controlled_event_benchmark_v1
+2014-06-01,Germany,VTT,Midmarket,ACTUAL_WITH_EVENTS,888.0,15.0,10.0,0.0,250.0,controlled_event_benchmark_v1
+2014-06-01,Germany,Velo,Channel Partners,ACTUAL_WITH_EVENTS,1545.0,12.0,3.0,0.0,120.0,controlled_event_benchmark_v1
+2014-06-01,Germany,Velo,Government,ACTUAL_WITH_EVENTS,3344.0,110.1872009569378,81.71351674641149,0.0035533264941677,120.0,controlled_event_benchmark_v1
+2014-06-01,Mexico,Amarilla,Government,ACTUAL_WITH_EVENTS,1038.0,20.0,10.0,0.09,260.0,controlled_event_benchmark_v1
+2014-06-01,Mexico,Amarilla,Small Business,ACTUAL_WITH_EVENTS,2460.0,300.0,250.0,0.08,260.0,controlled_event_benchmark_v1
+2014-06-01,Mexico,Carretera,Government,ACTUAL_WITH_EVENTS,886.0,350.0,260.0,0.12,3.0,controlled_event_benchmark_v1
+2014-06-01,Mexico,Carretera,Midmarket,ACTUAL_WITH_EVENTS,2470.0,15.0,10.0,0.0,3.0,controlled_event_benchmark_v1
+2014-06-01,Mexico,Montana,Channel Partners,ACTUAL_WITH_EVENTS,604.0,12.0,3.0,0.13,5.0,controlled_event_benchmark_v1
+2014-06-01,Mexico,Montana,Midmarket,ACTUAL_WITH_EVENTS,2470.0,15.0,10.0,0.0,5.0,controlled_event_benchmark_v1
+2014-06-01,Mexico,Paseo,Enterprise,ACTUAL_WITH_EVENTS,662.0,125.0,120.0,0.02,10.0,controlled_event_benchmark_v1
+2014-06-01,Mexico,Paseo,Government,ACTUAL_WITH_EVENTS,1924.0,171.96465696465697,125.12474012474011,0.1181176328356404,10.0,controlled_event_benchmark_v1
+2014-06-01,Mexico,Paseo,Small Business,ACTUAL_WITH_EVENTS,2460.0,300.0,250.0,0.08,10.0,controlled_event_benchmark_v1
+2014-06-01,Mexico,VTT,Enterprise,ACTUAL_WITH_EVENTS,662.0,125.0,120.0,0.02,250.0,controlled_event_benchmark_v1
+2014-06-01,Mexico,VTT,Government,ACTUAL_WITH_EVENTS,1498.0,7.0,5.0,0.06,250.0,controlled_event_benchmark_v1
+2014-06-01,Mexico,Velo,Channel Partners,ACTUAL_WITH_EVENTS,604.0,12.0,3.0,0.13,120.0,controlled_event_benchmark_v1
+2014-06-01,Mexico,Velo,Government,ACTUAL_WITH_EVENTS,1498.0,7.0,5.0,0.06,120.0,controlled_event_benchmark_v1
+2014-06-01,United States of America,Amarilla,Government,ACTUAL_WITH_EVENTS,4189.0,10.978515158749104,6.530198137980425,0.13,260.0,controlled_event_benchmark_v1
+2014-06-01,United States of America,Carretera,Midmarket,ACTUAL_WITH_EVENTS,2567.0,15.0,10.0,0.1299999999999999,3.0,controlled_event_benchmark_v1
+2014-06-01,United States of America,Carretera,Small Business,ACTUAL_WITH_EVENTS,991.0,300.0,250.0,0.05,3.0,controlled_event_benchmark_v1
+2014-06-01,United States of America,Montana,Channel Partners,ACTUAL_WITH_EVENTS,1142.0,12.0,3.0,0.02,5.0,controlled_event_benchmark_v1
+2014-06-01,United States of America,Montana,Government,ACTUAL_WITH_EVENTS,1282.0,20.0,10.0,0.0799999999999999,5.0,controlled_event_benchmark_v1
+2014-06-01,United States of America,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,1142.0,12.0,3.0,0.02,10.0,controlled_event_benchmark_v1
+2014-06-01,United States of America,Paseo,Enterprise,ACTUAL_WITH_EVENTS,727.0,125.0,120.0,0.01,10.0,controlled_event_benchmark_v1
+2014-06-01,United States of America,Paseo,Government,ACTUAL_WITH_EVENTS,602.0,350.0,260.0,0.05,10.0,controlled_event_benchmark_v1
+2014-06-01,United States of America,Paseo,Small Business,ACTUAL_WITH_EVENTS,991.0,300.0,250.0,0.05,10.0,controlled_event_benchmark_v1
+2014-06-01,United States of America,VTT,Enterprise,ACTUAL_WITH_EVENTS,727.0,125.0,120.0,0.01,250.0,controlled_event_benchmark_v1
+2014-06-01,United States of America,VTT,Midmarket,ACTUAL_WITH_EVENTS,2567.0,15.0,10.0,0.1299999999999999,250.0,controlled_event_benchmark_v1
+2014-06-01,United States of America,Velo,Government,ACTUAL_WITH_EVENTS,3509.0,65.84468509546879,48.74750641208321,0.0526421668131002,120.0,controlled_event_benchmark_v1
+2014-07-01,Canada,Amarilla,Midmarket,ACTUAL_WITH_EVENTS,1630.5,15.0,10.0,0.09,260.0,controlled_event_benchmark_v1
+2014-07-01,Canada,Carretera,Government,ACTUAL_WITH_EVENTS,819.0,7.0,5.0,0.09,3.0,controlled_event_benchmark_v1
+2014-07-01,Canada,Montana,Enterprise,ACTUAL_WITH_EVENTS,2665.5,125.0,120.0,0.0,5.0,controlled_event_benchmark_v1
+2014-07-01,Canada,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,4026.0,12.0,3.0,0.11,10.0,controlled_event_benchmark_v1
+2014-07-01,Canada,Paseo,Government,ACTUAL_WITH_EVENTS,2104.5,350.0,260.0,0.11,10.0,controlled_event_benchmark_v1
+2014-07-01,Canada,VTT,Government,ACTUAL_WITH_EVENTS,865.5,20.0,10.0,0.15,250.0,controlled_event_benchmark_v1
+2014-07-01,Canada,Velo,Small Business,ACTUAL_WITH_EVENTS,3793.5,300.0,250.0,0.09,120.0,controlled_event_benchmark_v1
+2014-07-01,France,Amarilla,Government,ACTUAL_WITH_EVENTS,3421.5,7.0,5.0,0.12,260.0,controlled_event_benchmark_v1
+2014-07-01,France,Montana,Government,ACTUAL_WITH_EVENTS,1375.5,20.0,10.0,0.01,5.0,controlled_event_benchmark_v1
+2014-07-01,France,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,2425.5,12.0,3.0,0.11,10.0,controlled_event_benchmark_v1
+2014-07-01,France,Paseo,Enterprise,ACTUAL_WITH_EVENTS,2988.0,125.0,120.0,0.04,10.0,controlled_event_benchmark_v1
+2014-07-01,France,VTT,Midmarket,ACTUAL_WITH_EVENTS,3874.5,15.0,10.0,0.12,250.0,controlled_event_benchmark_v1
+2014-07-01,France,Velo,Government,ACTUAL_WITH_EVENTS,639.0,350.0,260.0,0.1,120.0,controlled_event_benchmark_v1
+2014-07-01,France,Velo,Small Business,ACTUAL_WITH_EVENTS,1659.0,300.0,250.0,0.07,120.0,controlled_event_benchmark_v1
+2014-07-01,Germany,Amarilla,Government,ACTUAL_WITH_EVENTS,1686.0,7.0,5.0,0.0,260.0,controlled_event_benchmark_v1
+2014-07-01,Germany,Carretera,Small Business,ACTUAL_WITH_EVENTS,2811.0,300.0,250.0,0.11,3.0,controlled_event_benchmark_v1
+2014-07-01,Germany,Montana,Government,ACTUAL_WITH_EVENTS,645.0,20.0,10.0,0.08,5.0,controlled_event_benchmark_v1
+2014-07-01,Germany,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,367.0,12.0,3.0,0.0,10.0,controlled_event_benchmark_v1
+2014-07-01,Germany,Paseo,Enterprise,ACTUAL_WITH_EVENTS,3513.0,125.0,120.0,0.07,10.0,controlled_event_benchmark_v1
+2014-07-01,Germany,VTT,Midmarket,ACTUAL_WITH_EVENTS,492.0,15.0,10.0,0.15,250.0,controlled_event_benchmark_v1
+2014-07-01,Germany,Velo,Government,ACTUAL_WITH_EVENTS,1307.0,350.0,260.0,0.09,120.0,controlled_event_benchmark_v1
+2014-07-01,Mexico,Amarilla,Government,ACTUAL_WITH_EVENTS,1683.0,7.0,5.0,0.0499999999999999,260.0,controlled_event_benchmark_v1
+2014-07-01,Mexico,Carretera,Small Business,ACTUAL_WITH_EVENTS,801.0,300.0,250.0,0.14,3.0,controlled_event_benchmark_v1
+2014-07-01,Mexico,Montana,Government,ACTUAL_WITH_EVENTS,2255.0,20.0,10.0,0.13,5.0,controlled_event_benchmark_v1
+2014-07-01,Mexico,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,502.48,12.0,3.0,0.13,10.0,controlled_event_benchmark_v1
+2014-07-01,Mexico,Paseo,Enterprise,ACTUAL_WITH_EVENTS,1604.24,125.0,120.0,0.01,10.0,controlled_event_benchmark_v1
+2014-07-01,Mexico,VTT,Midmarket,ACTUAL_WITH_EVENTS,641.0,15.0,10.0,0.1,250.0,controlled_event_benchmark_v1
+2014-07-01,Mexico,Velo,Government,ACTUAL_WITH_EVENTS,1395.0,350.0,260.0,0.12,120.0,controlled_event_benchmark_v1
+2014-07-01,United States of America,Amarilla,Midmarket,ACTUAL_WITH_EVENTS,3199.5,15.0,10.0,0.1099999999999999,260.0,controlled_event_benchmark_v1
+2014-07-01,United States of America,Carretera,Government,ACTUAL_WITH_EVENTS,2529.0,7.0,5.0,0.01,3.0,controlled_event_benchmark_v1
+2014-07-01,United States of America,Montana,Enterprise,ACTUAL_WITH_EVENTS,3627.0,125.0,120.0,0.05,5.0,controlled_event_benchmark_v1
+2014-07-01,United States of America,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,1369.5,12.0,3.0,0.03,10.0,controlled_event_benchmark_v1
+2014-07-01,United States of America,Paseo,Government,ACTUAL_WITH_EVENTS,3450.0,350.0,260.0,0.04,10.0,controlled_event_benchmark_v1
+2014-07-01,United States of America,VTT,Government,ACTUAL_WITH_EVENTS,436.5,20.0,10.0,0.08,250.0,controlled_event_benchmark_v1
+2014-07-01,United States of America,Velo,Small Business,ACTUAL_WITH_EVENTS,2460.0,300.0,250.0,0.14,120.0,controlled_event_benchmark_v1
+2014-08-01,Canada,Amarilla,Government,ACTUAL_WITH_EVENTS,552.0,350.0,260.0,0.05,260.0,controlled_event_benchmark_v1
+2014-08-01,Canada,Carretera,Channel Partners,ACTUAL_WITH_EVENTS,1884.0,12.0,3.0,0.0699999999999999,3.0,controlled_event_benchmark_v1
+2014-08-01,Canada,Montana,Government,ACTUAL_WITH_EVENTS,1830.0,7.0,5.0,0.01,5.0,controlled_event_benchmark_v1
+2014-08-01,Canada,Paseo,Government,ACTUAL_WITH_EVENTS,2394.0,20.0,10.0,0.11,10.0,controlled_event_benchmark_v1
+2014-08-01,Canada,Paseo,Midmarket,ACTUAL_WITH_EVENTS,2559.0,15.0,10.0,0.15,10.0,controlled_event_benchmark_v1
+2014-08-01,Canada,VTT,Small Business,ACTUAL_WITH_EVENTS,1874.0,300.0,250.0,0.03,250.0,controlled_event_benchmark_v1
+2014-08-01,Canada,Velo,Enterprise,ACTUAL_WITH_EVENTS,923.0,125.0,120.0,0.01,120.0,controlled_event_benchmark_v1
+2014-08-01,France,Amarilla,Channel Partners,ACTUAL_WITH_EVENTS,2475.0,12.0,3.0,0.14,260.0,controlled_event_benchmark_v1
+2014-08-01,France,Carretera,Enterprise,ACTUAL_WITH_EVENTS,1174.0,125.0,120.0,0.15,3.0,controlled_event_benchmark_v1
+2014-08-01,France,Montana,Small Business,ACTUAL_WITH_EVENTS,1562.0,300.0,250.0,0.08,5.0,controlled_event_benchmark_v1
+2014-08-01,France,Paseo,Government,ACTUAL_WITH_EVENTS,2696.0,7.0,5.0,0.13,10.0,controlled_event_benchmark_v1
+2014-08-01,France,Paseo,Midmarket,ACTUAL_WITH_EVENTS,2101.0,15.0,10.0,0.07,10.0,controlled_event_benchmark_v1
+2014-08-01,France,VTT,Government,ACTUAL_WITH_EVENTS,381.0,350.0,260.0,0.08,250.0,controlled_event_benchmark_v1
+2014-08-01,France,Velo,Government,ACTUAL_WITH_EVENTS,1579.0,20.0,10.0,0.05,120.0,controlled_event_benchmark_v1
+2014-08-01,Germany,Amarilla,Channel Partners,ACTUAL_WITH_EVENTS,2574.0,12.0,3.0,0.1,260.0,controlled_event_benchmark_v1
+2014-08-01,Germany,Carretera,Enterprise,ACTUAL_WITH_EVENTS,2767.0,125.0,120.0,0.15,3.0,controlled_event_benchmark_v1
+2014-08-01,Germany,Montana,Small Business,ACTUAL_WITH_EVENTS,1859.0,300.0,250.0,0.04,5.0,controlled_event_benchmark_v1
+2014-08-01,Germany,Paseo,Government,ACTUAL_WITH_EVENTS,1598.0,7.0,5.0,0.08,10.0,controlled_event_benchmark_v1
+2014-08-01,Germany,Paseo,Midmarket,ACTUAL_WITH_EVENTS,1743.0,15.0,10.0,0.06,10.0,controlled_event_benchmark_v1
+2014-08-01,Germany,VTT,Government,ACTUAL_WITH_EVENTS,422.0,350.0,260.0,0.08,250.0,controlled_event_benchmark_v1
+2014-08-01,Germany,Velo,Government,ACTUAL_WITH_EVENTS,1001.0,20.0,10.0,0.06,120.0,controlled_event_benchmark_v1
+2014-08-01,Mexico,Amarilla,Channel Partners,ACTUAL_WITH_EVENTS,1123.0,12.0,3.0,0.0499999999999999,260.0,controlled_event_benchmark_v1
+2014-08-01,Mexico,Carretera,Enterprise,ACTUAL_WITH_EVENTS,1540.0,125.0,120.0,0.08,3.0,controlled_event_benchmark_v1
+2014-08-01,Mexico,Montana,Small Business,ACTUAL_WITH_EVENTS,958.0,300.0,250.0,0.0,5.0,controlled_event_benchmark_v1
+2014-08-01,Mexico,Paseo,Government,ACTUAL_WITH_EVENTS,777.04,7.0,5.0,0.0,10.0,controlled_event_benchmark_v1
+2014-08-01,Mexico,Paseo,Midmarket,ACTUAL_WITH_EVENTS,1745.92,15.0,10.0,0.11,10.0,controlled_event_benchmark_v1
+2014-08-01,Mexico,VTT,Government,ACTUAL_WITH_EVENTS,1642.0,350.0,260.0,0.03,250.0,controlled_event_benchmark_v1
+2014-08-01,Mexico,Velo,Government,ACTUAL_WITH_EVENTS,609.0,20.0,10.0,0.07,120.0,controlled_event_benchmark_v1
+2014-08-01,United States of America,Amarilla,Channel Partners,ACTUAL_WITH_EVENTS,2141.0,12.0,3.0,0.0,260.0,controlled_event_benchmark_v1
+2014-08-01,United States of America,Paseo,Government,ACTUAL_WITH_EVENTS,678.0,7.0,5.0,0.08,10.0,controlled_event_benchmark_v1
+2014-08-01,United States of America,Paseo,Midmarket,ACTUAL_WITH_EVENTS,2198.0,15.0,10.0,0.06,10.0,controlled_event_benchmark_v1
+2014-08-01,United States of America,VTT,Government,ACTUAL_WITH_EVENTS,2807.0,350.0,260.0,0.1,250.0,controlled_event_benchmark_v1
+2014-08-01,United States of America,VTT,Small Business,ACTUAL_WITH_EVENTS,2541.0,300.0,250.0,0.14,250.0,controlled_event_benchmark_v1
+2014-08-01,United States of America,Velo,Enterprise,ACTUAL_WITH_EVENTS,2821.0,125.0,120.0,0.0,120.0,controlled_event_benchmark_v1
+2014-08-01,United States of America,Velo,Government,ACTUAL_WITH_EVENTS,2832.0,20.0,10.0,0.05,120.0,controlled_event_benchmark_v1
+2014-09-01,Canada,Amarilla,Government,ACTUAL_WITH_EVENTS,707.0,350.0,260.0,0.1,260.0,controlled_event_benchmark_v1
+2014-09-01,Canada,Carretera,Channel Partners,ACTUAL_WITH_EVENTS,1445.0,12.0,3.0,0.01,3.0,controlled_event_benchmark_v1
+2014-09-01,Canada,Montana,Government,ACTUAL_WITH_EVENTS,388.0,7.0,5.0,0.14,5.0,controlled_event_benchmark_v1
+2014-09-01,Canada,Paseo,Government,ACTUAL_WITH_EVENTS,2074.0,20.0,10.0,0.04,10.0,controlled_event_benchmark_v1
+2014-09-01,Canada,Paseo,Midmarket,ACTUAL_WITH_EVENTS,218.0,15.0,10.0,0.04,10.0,controlled_event_benchmark_v1
+2014-09-01,Canada,VTT,Small Business,ACTUAL_WITH_EVENTS,2134.0,300.0,250.0,0.08,250.0,controlled_event_benchmark_v1
+2014-09-01,Canada,Velo,Enterprise,ACTUAL_WITH_EVENTS,567.0,125.0,120.0,0.09,120.0,controlled_event_benchmark_v1
+2014-09-01,France,Amarilla,Government,ACTUAL_WITH_EVENTS,2876.0,350.0,260.0,0.07,260.0,controlled_event_benchmark_v1
+2014-09-01,France,Carretera,Channel Partners,ACTUAL_WITH_EVENTS,2671.0,12.0,3.0,0.01,3.0,controlled_event_benchmark_v1
+2014-09-01,France,Montana,Government,ACTUAL_WITH_EVENTS,544.0,7.0,5.0,0.03,5.0,controlled_event_benchmark_v1
+2014-09-01,France,Paseo,Government,ACTUAL_WITH_EVENTS,1535.0,20.0,10.0,0.07,10.0,controlled_event_benchmark_v1
+2014-09-01,France,Paseo,Midmarket,ACTUAL_WITH_EVENTS,2620.0,15.0,10.0,0.05,10.0,controlled_event_benchmark_v1
+2014-09-01,France,VTT,Small Business,ACTUAL_WITH_EVENTS,2151.0,300.0,250.0,0.0,250.0,controlled_event_benchmark_v1
+2014-09-01,France,Velo,Enterprise,ACTUAL_WITH_EVENTS,663.0,125.0,120.0,0.15,120.0,controlled_event_benchmark_v1
+2014-09-01,Germany,Amarilla,Government,ACTUAL_WITH_EVENTS,1907.0,350.0,260.0,0.04,260.0,controlled_event_benchmark_v1
+2014-09-01,Germany,Carretera,Channel Partners,ACTUAL_WITH_EVENTS,1580.0,12.0,3.0,0.09,3.0,controlled_event_benchmark_v1
+2014-09-01,Germany,Montana,Government,ACTUAL_WITH_EVENTS,2146.0,7.0,5.0,0.0,5.0,controlled_event_benchmark_v1
+2014-09-01,Germany,Paseo,Government,ACTUAL_WITH_EVENTS,1934.0,20.0,10.0,0.08,10.0,controlled_event_benchmark_v1
+2014-09-01,Germany,Paseo,Midmarket,ACTUAL_WITH_EVENTS,747.0,15.0,10.0,0.01,10.0,controlled_event_benchmark_v1
+2014-09-01,Germany,VTT,Small Business,ACTUAL_WITH_EVENTS,986.0,300.0,250.0,0.01,250.0,controlled_event_benchmark_v1
+2014-09-01,Germany,Velo,Enterprise,ACTUAL_WITH_EVENTS,2087.0,125.0,120.0,0.07,120.0,controlled_event_benchmark_v1
+2014-09-01,Mexico,Amarilla,Government,ACTUAL_WITH_EVENTS,1679.0,350.0,260.0,0.06,260.0,controlled_event_benchmark_v1
+2014-09-01,Mexico,Carretera,Channel Partners,ACTUAL_WITH_EVENTS,562.0,12.0,3.0,0.06,3.0,controlled_event_benchmark_v1
+2014-09-01,Mexico,Montana,Government,ACTUAL_WITH_EVENTS,2420.0,7.0,5.0,0.12,5.0,controlled_event_benchmark_v1
+2014-09-01,Mexico,Paseo,Government,ACTUAL_WITH_EVENTS,2633.84,20.0,10.0,0.08,10.0,controlled_event_benchmark_v1
+2014-09-01,Mexico,Paseo,Midmarket,ACTUAL_WITH_EVENTS,2175.36,15.0,10.0,0.0,10.0,controlled_event_benchmark_v1
+2014-09-01,Mexico,VTT,Small Business,ACTUAL_WITH_EVENTS,432.0,300.0,250.0,0.1,250.0,controlled_event_benchmark_v1
+2014-09-01,Mexico,Velo,Enterprise,ACTUAL_WITH_EVENTS,2110.0,125.0,120.0,0.09,120.0,controlled_event_benchmark_v1
+2014-09-01,United States of America,Amarilla,Government,ACTUAL_WITH_EVENTS,2071.0,350.0,260.0,0.09,260.0,controlled_event_benchmark_v1
+2014-09-01,United States of America,Carretera,Channel Partners,ACTUAL_WITH_EVENTS,1947.0,12.0,3.0,0.03,3.0,controlled_event_benchmark_v1
+2014-09-01,United States of America,Montana,Government,ACTUAL_WITH_EVENTS,2328.0,7.0,5.0,0.0999999999999999,5.0,controlled_event_benchmark_v1
+2014-09-01,United States of America,Paseo,Government,ACTUAL_WITH_EVENTS,1056.0,20.0,10.0,0.04,10.0,controlled_event_benchmark_v1
+2014-09-01,United States of America,Paseo,Midmarket,ACTUAL_WITH_EVENTS,1767.0,15.0,10.0,0.1399999999999999,10.0,controlled_event_benchmark_v1
+2014-09-01,United States of America,VTT,Small Business,ACTUAL_WITH_EVENTS,1867.0,300.0,250.0,0.09,250.0,controlled_event_benchmark_v1
+2014-09-01,United States of America,Velo,Enterprise,ACTUAL_WITH_EVENTS,1596.0,125.0,120.0,0.1,120.0,controlled_event_benchmark_v1
+2014-10-01,Canada,Amarilla,Government,ACTUAL_WITH_EVENTS,4003.0,115.73519860104922,85.8381214089433,0.0912392723316813,260.0,controlled_event_benchmark_v1
+2014-10-01,Canada,Carretera,Channel Partners,ACTUAL_WITH_EVENTS,1295.0,12.0,3.0,0.02,3.0,controlled_event_benchmark_v1
+2014-10-01,Canada,Carretera,Small Business,ACTUAL_WITH_EVENTS,1496.0,300.0,250.0,0.14,3.0,controlled_event_benchmark_v1
+2014-10-01,Canada,Montana,Government,ACTUAL_WITH_EVENTS,3983.0,11.076575445643988,6.567913632939995,0.125662088036629,5.0,controlled_event_benchmark_v1
+2014-10-01,Canada,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,1295.0,12.0,3.0,0.02,10.0,controlled_event_benchmark_v1
+2014-10-01,Canada,Paseo,Enterprise,ACTUAL_WITH_EVENTS,2009.0,125.0,120.0,0.03,10.0,controlled_event_benchmark_v1
+2014-10-01,Canada,Paseo,Government,ACTUAL_WITH_EVENTS,1249.0,20.0,10.0,0.13,10.0,controlled_event_benchmark_v1
+2014-10-01,Canada,Paseo,Midmarket,ACTUAL_WITH_EVENTS,1565.0,15.0,10.0,0.13,10.0,controlled_event_benchmark_v1
+2014-10-01,Canada,VTT,Midmarket,ACTUAL_WITH_EVENTS,1565.0,15.0,10.0,0.13,250.0,controlled_event_benchmark_v1
+2014-10-01,Canada,VTT,Small Business,ACTUAL_WITH_EVENTS,1496.0,300.0,250.0,0.14,250.0,controlled_event_benchmark_v1
+2014-10-01,Canada,Velo,Enterprise,ACTUAL_WITH_EVENTS,2009.0,125.0,120.0,0.03,120.0,controlled_event_benchmark_v1
+2014-10-01,Canada,Velo,Government,ACTUAL_WITH_EVENTS,1269.0,350.0,260.0,0.09,120.0,controlled_event_benchmark_v1
+2014-10-01,France,Amarilla,Channel Partners,ACTUAL_WITH_EVENTS,1393.0,12.0,3.0,0.1399999999999999,260.0,controlled_event_benchmark_v1
+2014-10-01,France,Amarilla,Government,ACTUAL_WITH_EVENTS,1731.0,7.0,5.0,0.14,260.0,controlled_event_benchmark_v1
+2014-10-01,France,Carretera,Enterprise,ACTUAL_WITH_EVENTS,2441.0,125.0,120.0,0.11,3.0,controlled_event_benchmark_v1
+2014-10-01,France,Carretera,Small Business,ACTUAL_WITH_EVENTS,2181.0,300.0,250.0,0.07,3.0,controlled_event_benchmark_v1
+2014-10-01,France,Montana,Government,ACTUAL_WITH_EVENTS,1976.0,20.0,10.0,0.07,5.0,controlled_event_benchmark_v1
+2014-10-01,France,Montana,Small Business,ACTUAL_WITH_EVENTS,2181.0,300.0,250.0,0.07,5.0,controlled_event_benchmark_v1
+2014-10-01,France,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,1393.0,12.0,3.0,0.1399999999999999,10.0,controlled_event_benchmark_v1
+2014-10-01,France,Paseo,Enterprise,ACTUAL_WITH_EVENTS,2441.0,125.0,120.0,0.11,10.0,controlled_event_benchmark_v1
+2014-10-01,France,Paseo,Government,ACTUAL_WITH_EVENTS,1731.0,7.0,5.0,0.14,10.0,controlled_event_benchmark_v1
+2014-10-01,France,Paseo,Midmarket,ACTUAL_WITH_EVENTS,1227.0,15.0,10.0,0.09,10.0,controlled_event_benchmark_v1
+2014-10-01,France,VTT,Government,ACTUAL_WITH_EVENTS,2177.0,350.0,260.0,0.04,250.0,controlled_event_benchmark_v1
+2014-10-01,France,VTT,Midmarket,ACTUAL_WITH_EVENTS,1227.0,15.0,10.0,0.09,250.0,controlled_event_benchmark_v1
+2014-10-01,France,Velo,Government,ACTUAL_WITH_EVENTS,4153.0,192.98579340235972,141.04984348663618,0.0414792818196563,120.0,controlled_event_benchmark_v1
+2014-10-01,Germany,Amarilla,Channel Partners,ACTUAL_WITH_EVENTS,472.0,12.0,3.0,0.1099999999999999,260.0,controlled_event_benchmark_v1
+2014-10-01,Germany,Carretera,Enterprise,ACTUAL_WITH_EVENTS,1085.0,125.0,120.0,0.15,3.0,controlled_event_benchmark_v1
+2014-10-01,Germany,Carretera,Small Business,ACTUAL_WITH_EVENTS,2021.0,300.0,250.0,0.04,3.0,controlled_event_benchmark_v1
+2014-10-01,Germany,Montana,Small Business,ACTUAL_WITH_EVENTS,2021.0,300.0,250.0,0.04,5.0,controlled_event_benchmark_v1
+2014-10-01,Germany,Paseo,Enterprise,ACTUAL_WITH_EVENTS,1085.0,125.0,120.0,0.15,10.0,controlled_event_benchmark_v1
+2014-10-01,Germany,Paseo,Government,ACTUAL_WITH_EVENTS,601.0,12.21297836938436,7.004991680532446,0.096566757493188,10.0,controlled_event_benchmark_v1
+2014-10-01,Germany,Paseo,Midmarket,ACTUAL_WITH_EVENTS,1175.0,15.0,10.0,0.15,10.0,controlled_event_benchmark_v1
+2014-10-01,Germany,VTT,Government,ACTUAL_WITH_EVENTS,3237.0,311.85356811862835,250.17164040778502,0.0201747451633035,250.0,controlled_event_benchmark_v1
+2014-10-01,Germany,VTT,Midmarket,ACTUAL_WITH_EVENTS,1175.0,15.0,10.8,0.15,250.0,controlled_event_benchmark_v1
+2014-10-01,Germany,Velo,Channel Partners,ACTUAL_WITH_EVENTS,472.0,12.0,3.0,0.1099999999999999,120.0,controlled_event_benchmark_v1
+2014-10-01,Germany,Velo,Government,ACTUAL_WITH_EVENTS,3118.0,324.49326491340605,240.6767158434894,0.0203811142848671,120.0,controlled_event_benchmark_v1
+2014-10-01,Mexico,Amarilla,Channel Partners,ACTUAL_WITH_EVENTS,410.0,12.0,3.0,0.13,260.0,controlled_event_benchmark_v1
+2014-10-01,Mexico,Amarilla,Small Business,ACTUAL_WITH_EVENTS,546.0,300.0,250.0,0.15,260.0,controlled_event_benchmark_v1
+2014-10-01,Mexico,Carretera,Enterprise,ACTUAL_WITH_EVENTS,2156.0,125.0,120.0,0.12,3.0,controlled_event_benchmark_v1
+2014-10-01,Mexico,Carretera,Government,ACTUAL_WITH_EVENTS,1397.0,350.0,260.0,0.01,3.0,controlled_event_benchmark_v1
+2014-10-01,Mexico,Montana,Midmarket,ACTUAL_WITH_EVENTS,2031.0,15.0,10.0,0.0399999999999999,5.0,controlled_event_benchmark_v1
+2014-10-01,Mexico,Montana,Small Business,ACTUAL_WITH_EVENTS,546.0,300.0,250.0,0.15,5.0,controlled_event_benchmark_v1
+2014-10-01,Mexico,Paseo,Enterprise,ACTUAL_WITH_EVENTS,2156.0,125.0,120.0,0.12,10.0,controlled_event_benchmark_v1
+2014-10-01,Mexico,Paseo,Government,ACTUAL_WITH_EVENTS,3594.0,10.27351140790206,6.2590428491931,0.0843146548221975,10.0,controlled_event_benchmark_v1
+2014-10-01,Mexico,Paseo,Midmarket,ACTUAL_WITH_EVENTS,2031.0,15.0,10.0,0.0399999999999999,10.0,controlled_event_benchmark_v1
+2014-10-01,Mexico,VTT,Government,ACTUAL_WITH_EVENTS,4086.0,124.27141458639257,92.18428781204112,0.0114827885689077,250.0,controlled_event_benchmark_v1
+2014-10-01,Mexico,Velo,Channel Partners,ACTUAL_WITH_EVENTS,410.0,12.0,3.0,0.13,120.0,controlled_event_benchmark_v1
+2014-10-01,Mexico,Velo,Government,ACTUAL_WITH_EVENTS,905.0,20.0,10.0,0.12,120.0,controlled_event_benchmark_v1
+2014-10-01,United States of America,Amarilla,Channel Partners,ACTUAL_WITH_EVENTS,2914.0,12.0,3.0,0.14,260.0,controlled_event_benchmark_v1
+2014-10-01,United States of America,Amarilla,Government,ACTUAL_WITH_EVENTS,1143.0,7.0,5.0,0.0,260.0,controlled_event_benchmark_v1
+2014-10-01,United States of America,Carretera,Small Business,ACTUAL_WITH_EVENTS,1010.0,300.0,250.0,0.14,3.0,controlled_event_benchmark_v1
+2014-10-01,United States of America,Montana,Government,ACTUAL_WITH_EVENTS,1566.0,20.0,10.0,0.02,5.0,controlled_event_benchmark_v1
+2014-10-01,United States of America,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,2914.0,12.0,3.0,0.14,10.0,controlled_event_benchmark_v1
+2014-10-01,United States of America,Paseo,Enterprise,ACTUAL_WITH_EVENTS,861.0,125.0,120.0,0.05,10.0,controlled_event_benchmark_v1
+2014-10-01,United States of America,Paseo,Government,ACTUAL_WITH_EVENTS,1143.0,7.0,5.0,0.0,10.0,controlled_event_benchmark_v1
+2014-10-01,United States of America,Paseo,Midmarket,ACTUAL_WITH_EVENTS,1153.0,15.0,10.0,0.06,10.0,controlled_event_benchmark_v1
+2014-10-01,United States of America,VTT,Government,ACTUAL_WITH_EVENTS,986.0,350.0,260.0,0.12,250.0,controlled_event_benchmark_v1
+2014-10-01,United States of America,VTT,Midmarket,ACTUAL_WITH_EVENTS,1153.0,15.0,10.0,0.06,250.0,controlled_event_benchmark_v1
+2014-10-01,United States of America,VTT,Small Business,ACTUAL_WITH_EVENTS,1010.0,300.0,250.0,0.14,250.0,controlled_event_benchmark_v1
+2014-10-01,United States of America,Velo,Enterprise,ACTUAL_WITH_EVENTS,861.0,125.0,120.0,0.05,120.0,controlled_event_benchmark_v1
+2014-10-01,United States of America,Velo,Government,ACTUAL_WITH_EVENTS,2552.0,147.5,106.5909090909091,0.1116795069337442,120.0,controlled_event_benchmark_v1
+2014-11-01,Canada,Amarilla,Government,ACTUAL_WITH_EVENTS,1118.0,20.0,10.0,0.07,260.0,controlled_event_benchmark_v1
+2014-11-01,Canada,Carretera,Midmarket,ACTUAL_WITH_EVENTS,2689.0,15.0,10.0,0.12,3.0,controlled_event_benchmark_v1
+2014-11-01,Canada,Montana,Channel Partners,ACTUAL_WITH_EVENTS,2321.0,12.0,3.0,0.09,5.0,controlled_event_benchmark_v1
+2014-11-01,Canada,Paseo,Government,ACTUAL_WITH_EVENTS,700.0,350.0,260.0,0.14,10.0,controlled_event_benchmark_v1
+2014-11-01,Canada,Paseo,Small Business,ACTUAL_WITH_EVENTS,1366.0,300.0,250.0,0.11,10.0,controlled_event_benchmark_v1
+2014-11-01,Canada,VTT,Enterprise,ACTUAL_WITH_EVENTS,2529.0,125.0,120.0,0.1,250.0,controlled_event_benchmark_v1
+2014-11-01,Canada,Velo,Government,ACTUAL_WITH_EVENTS,1808.0,7.0,5.0,0.11,120.0,controlled_event_benchmark_v1
+2014-11-01,France,Amarilla,Government,ACTUAL_WITH_EVENTS,941.0,20.0,10.0,0.02,260.0,controlled_event_benchmark_v1
+2014-11-01,France,Carretera,Midmarket,ACTUAL_WITH_EVENTS,490.0,15.0,10.0,0.08,3.0,controlled_event_benchmark_v1
+2014-11-01,France,Montana,Channel Partners,ACTUAL_WITH_EVENTS,2342.0,12.0,3.0,0.0699999999999999,5.0,controlled_event_benchmark_v1
+2014-11-01,France,Paseo,Government,ACTUAL_WITH_EVENTS,1594.0,350.0,260.0,0.12,10.0,controlled_event_benchmark_v1
+2014-11-01,France,Paseo,Small Business,ACTUAL_WITH_EVENTS,1324.0,300.0,250.0,0.09,10.0,controlled_event_benchmark_v1
+2014-11-01,France,VTT,Enterprise,ACTUAL_WITH_EVENTS,1744.0,125.0,120.0,0.01,250.0,controlled_event_benchmark_v1
+2014-11-01,France,Velo,Government,ACTUAL_WITH_EVENTS,639.0,7.0,5.0,0.0099999999999999,120.0,controlled_event_benchmark_v1
+2014-11-01,Germany,Amarilla,Government,ACTUAL_WITH_EVENTS,1520.0,20.0,10.0,0.08,260.0,controlled_event_benchmark_v1
+2014-11-01,Germany,Carretera,Midmarket,ACTUAL_WITH_EVENTS,1513.0,15.0,10.0,0.14,3.0,controlled_event_benchmark_v1
+2014-11-01,Germany,Montana,Channel Partners,ACTUAL_WITH_EVENTS,2342.0,12.0,3.0,0.05,5.0,controlled_event_benchmark_v1
+2014-11-01,Germany,Paseo,Government,ACTUAL_WITH_EVENTS,357.0,350.0,260.0,0.13,10.0,controlled_event_benchmark_v1
+2014-11-01,Germany,Paseo,Small Business,ACTUAL_WITH_EVENTS,1359.0,300.0,250.0,0.12,10.0,controlled_event_benchmark_v1
+2014-11-01,Germany,VTT,Enterprise,ACTUAL_WITH_EVENTS,552.0,125.0,129.60000000000002,0.15,250.0,controlled_event_benchmark_v1
+2014-11-01,Germany,Velo,Government,ACTUAL_WITH_EVENTS,2665.0,7.0,5.0,0.1,120.0,controlled_event_benchmark_v1
+2014-11-01,Mexico,Amarilla,Government,ACTUAL_WITH_EVENTS,1694.0,20.0,10.0,0.09,260.0,controlled_event_benchmark_v1
+2014-11-01,Mexico,Carretera,Midmarket,ACTUAL_WITH_EVENTS,2791.0,15.0,10.0,0.05,3.0,controlled_event_benchmark_v1
+2014-11-01,Mexico,Montana,Channel Partners,ACTUAL_WITH_EVENTS,690.0,12.0,3.0,0.02,5.0,controlled_event_benchmark_v1
+2014-11-01,Mexico,Paseo,Government,ACTUAL_WITH_EVENTS,1197.0,350.0,260.0,0.12,10.0,controlled_event_benchmark_v1
+2014-11-01,Mexico,Paseo,Small Business,ACTUAL_WITH_EVENTS,2150.0,300.0,250.0,0.12,10.0,controlled_event_benchmark_v1
+2014-11-01,Mexico,VTT,Enterprise,ACTUAL_WITH_EVENTS,877.0,125.0,120.0,0.09,250.0,controlled_event_benchmark_v1
+2014-11-01,Mexico,Velo,Government,ACTUAL_WITH_EVENTS,1333.0,7.0,5.0,0.06,120.0,controlled_event_benchmark_v1
+2014-11-01,United States of America,Amarilla,Government,ACTUAL_WITH_EVENTS,1236.0,20.0,10.0,0.02,260.0,controlled_event_benchmark_v1
+2014-11-01,United States of America,Carretera,Midmarket,ACTUAL_WITH_EVENTS,2030.0,15.0,10.0,0.06,3.0,controlled_event_benchmark_v1
+2014-11-01,United States of America,Montana,Channel Partners,ACTUAL_WITH_EVENTS,2723.0,12.0,3.0,0.06,5.0,controlled_event_benchmark_v1
+2014-11-01,United States of America,Paseo,Government,ACTUAL_WITH_EVENTS,1177.0,350.0,260.0,0.14,10.0,controlled_event_benchmark_v1
+2014-11-01,United States of America,Paseo,Small Business,ACTUAL_WITH_EVENTS,2905.0,300.0,250.0,0.01,10.0,controlled_event_benchmark_v1
+2014-11-01,United States of America,VTT,Enterprise,ACTUAL_WITH_EVENTS,2387.0,125.0,120.0,0.12,250.0,controlled_event_benchmark_v1
+2014-11-01,United States of America,Velo,Government,ACTUAL_WITH_EVENTS,547.0,7.0,5.0,0.0699999999999999,120.0,controlled_event_benchmark_v1
+2014-12-01,Canada,Amarilla,Small Business,ACTUAL_WITH_EVENTS,1916.0,300.0,250.0,0.02,260.0,controlled_event_benchmark_v1
+2014-12-01,Canada,Carretera,Government,ACTUAL_WITH_EVENTS,2852.0,350.0,260.0,0.02,3.0,controlled_event_benchmark_v1
+2014-12-01,Canada,Carretera,Midmarket,ACTUAL_WITH_EVENTS,2300.0,15.0,10.0,0.14,3.0,controlled_event_benchmark_v1
+2014-12-01,Canada,Montana,Midmarket,ACTUAL_WITH_EVENTS,2300.0,15.0,10.0,0.14,5.0,controlled_event_benchmark_v1
+2014-12-01,Canada,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,2431.0,12.0,3.0,0.0499999999999999,10.0,controlled_event_benchmark_v1
+2014-12-01,Canada,Paseo,Enterprise,ACTUAL_WITH_EVENTS,2729.0,125.0,120.0,0.02,10.0,controlled_event_benchmark_v1
+2014-12-01,Canada,Paseo,Government,ACTUAL_WITH_EVENTS,4669.0,221.57635467980296,162.70935960591132,0.0192974655402401,10.0,controlled_event_benchmark_v1
+2014-12-01,Canada,Paseo,Small Business,ACTUAL_WITH_EVENTS,1916.0,300.0,250.0,0.02,10.0,controlled_event_benchmark_v1
+2014-12-01,Canada,VTT,Enterprise,ACTUAL_WITH_EVENTS,2729.0,125.0,120.0,0.02,250.0,controlled_event_benchmark_v1
+2014-12-01,Canada,VTT,Government,ACTUAL_WITH_EVENTS,3399.0,13.949396881435716,7.672844954398353,0.0163491795672164,250.0,controlled_event_benchmark_v1
+2014-12-01,Canada,Velo,Channel Partners,ACTUAL_WITH_EVENTS,2431.0,12.0,3.0,0.0499999999999999,120.0,controlled_event_benchmark_v1
+2014-12-01,Canada,Velo,Government,ACTUAL_WITH_EVENTS,1582.0,7.0,5.0,0.0699999999999999,120.0,controlled_event_benchmark_v1
+2014-12-01,France,Amarilla,Midmarket,ACTUAL_WITH_EVENTS,2072.0,15.0,10.0,0.1,260.0,controlled_event_benchmark_v1
+2014-12-01,France,Amarilla,Small Business,ACTUAL_WITH_EVENTS,853.0,300.0,250.0,0.1,260.0,controlled_event_benchmark_v1
+2014-12-01,France,Carretera,Government,ACTUAL_WITH_EVENTS,4642.0,166.23416630762603,123.38108573890564,0.0109024193328918,3.0,controlled_event_benchmark_v1
+2014-12-01,France,Montana,Enterprise,ACTUAL_WITH_EVENTS,1287.0,125.0,120.0,0.03,5.0,controlled_event_benchmark_v1
+2014-12-01,France,Montana,Midmarket,ACTUAL_WITH_EVENTS,2072.0,15.0,10.0,0.1,5.0,controlled_event_benchmark_v1
+2014-12-01,France,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,1055.0,12.0,3.0,0.02,10.0,controlled_event_benchmark_v1
+2014-12-01,France,Paseo,Enterprise,ACTUAL_WITH_EVENTS,1287.0,125.0,120.0,0.03,10.0,controlled_event_benchmark_v1
+2014-12-01,France,Paseo,Government,ACTUAL_WITH_EVENTS,2448.0,310.5024509803921,230.07761437908496,0.0110793174672086,10.0,controlled_event_benchmark_v1
+2014-12-01,France,VTT,Government,ACTUAL_WITH_EVENTS,2780.0,8.370143884892085,5.526978417266187,0.0751837208302892,250.0,controlled_event_benchmark_v1
+2014-12-01,France,Velo,Channel Partners,ACTUAL_WITH_EVENTS,1055.0,12.0,3.0,0.02,120.0,controlled_event_benchmark_v1
+2014-12-01,France,Velo,Small Business,ACTUAL_WITH_EVENTS,853.0,300.0,250.0,0.1,120.0,controlled_event_benchmark_v1
+2014-12-01,Germany,Amarilla,Midmarket,ACTUAL_WITH_EVENTS,711.0,15.0,10.0,0.08,260.0,controlled_event_benchmark_v1
+2014-12-01,Germany,Amarilla,Small Business,ACTUAL_WITH_EVENTS,1250.0,300.0,250.0,0.05,260.0,controlled_event_benchmark_v1
+2014-12-01,Germany,Carretera,Government,ACTUAL_WITH_EVENTS,1793.0,296.43614054657,220.17847183491355,0.0005162649809034,3.0,controlled_event_benchmark_v1
+2014-12-01,Germany,Montana,Enterprise,ACTUAL_WITH_EVENTS,1706.0,125.0,120.0,0.03,5.0,controlled_event_benchmark_v1
+2014-12-01,Germany,Montana,Midmarket,ACTUAL_WITH_EVENTS,711.0,15.0,10.0,0.08,5.0,controlled_event_benchmark_v1
+2014-12-01,Germany,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,1013.0,12.0,3.0,0.13,10.0,controlled_event_benchmark_v1
+2014-12-01,Germany,Paseo,Enterprise,ACTUAL_WITH_EVENTS,1706.0,125.0,120.0,0.03,10.0,controlled_event_benchmark_v1
+2014-12-01,Germany,Paseo,Government,ACTUAL_WITH_EVENTS,3044.0,184.02431011826545,134.26084099868595,0.0065594373136726,10.0,controlled_event_benchmark_v1
+2014-12-01,Germany,VTT,Government,ACTUAL_WITH_EVENTS,1811.0,17.990060739922694,9.96510215350635,0.1212031921424186,250.0,controlled_event_benchmark_v1
+2014-12-01,Germany,Velo,Channel Partners,ACTUAL_WITH_EVENTS,1013.0,12.0,3.0,0.13,120.0,controlled_event_benchmark_v1
+2014-12-01,Germany,Velo,Small Business,ACTUAL_WITH_EVENTS,1250.0,300.0,250.0,0.05,120.0,controlled_event_benchmark_v1
+2014-12-01,Mexico,Amarilla,Midmarket,ACTUAL_WITH_EVENTS,2157.0,15.0,10.0,0.11,260.0,controlled_event_benchmark_v1
+2014-12-01,Mexico,Amarilla,Small Business,ACTUAL_WITH_EVENTS,635.0,300.0,250.0,0.08,260.0,controlled_event_benchmark_v1
+2014-12-01,Mexico,Carretera,Government,ACTUAL_WITH_EVENTS,1883.0,255.09665427509293,189.445034519384,0.0800759242797394,3.0,controlled_event_benchmark_v1
+2014-12-01,Mexico,Montana,Enterprise,ACTUAL_WITH_EVENTS,1138.0,125.0,120.0,0.04,5.0,controlled_event_benchmark_v1
+2014-12-01,Mexico,Montana,Midmarket,ACTUAL_WITH_EVENTS,2157.0,15.0,10.0,0.11,5.0,controlled_event_benchmark_v1
+2014-12-01,Mexico,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,1084.0,12.0,3.0,0.02,10.0,controlled_event_benchmark_v1
+2014-12-01,Mexico,Paseo,Enterprise,ACTUAL_WITH_EVENTS,1138.0,125.0,120.0,0.04,10.0,controlled_event_benchmark_v1
+2014-12-01,Mexico,Paseo,Government,ACTUAL_WITH_EVENTS,2595.0,193.20231213872836,141.21387283236993,0.0819674485399712,10.0,controlled_event_benchmark_v1
+2014-12-01,Mexico,VTT,Government,ACTUAL_WITH_EVENTS,1754.0,16.13854047890536,8.514823261117446,0.116134878298654,250.0,controlled_event_benchmark_v1
+2014-12-01,Mexico,Velo,Channel Partners,ACTUAL_WITH_EVENTS,1084.0,12.0,3.0,0.02,120.0,controlled_event_benchmark_v1
+2014-12-01,Mexico,Velo,Small Business,ACTUAL_WITH_EVENTS,635.0,300.0,250.0,0.08,120.0,controlled_event_benchmark_v1
+2014-12-01,United States of America,Amarilla,Midmarket,ACTUAL_WITH_EVENTS,615.0,15.0,10.0,0.0,260.0,controlled_event_benchmark_v1
+2014-12-01,United States of America,Amarilla,Small Business,ACTUAL_WITH_EVENTS,1372.0,300.0,250.0,0.07,260.0,controlled_event_benchmark_v1
+2014-12-01,United States of America,Carretera,Government,ACTUAL_WITH_EVENTS,844.0,118.35308056872036,87.78436018957346,0.0403994393833216,3.0,controlled_event_benchmark_v1
+2014-12-01,United States of America,Montana,Enterprise,ACTUAL_WITH_EVENTS,2797.0,125.0,120.0,0.09,5.0,controlled_event_benchmark_v1
+2014-12-01,United States of America,Montana,Midmarket,ACTUAL_WITH_EVENTS,615.0,15.0,10.0,0.0,5.0,controlled_event_benchmark_v1
+2014-12-01,United States of America,Paseo,Channel Partners,ACTUAL_WITH_EVENTS,914.0,12.0,3.0,0.15,10.0,controlled_event_benchmark_v1
+2014-12-01,United States of America,Paseo,Enterprise,ACTUAL_WITH_EVENTS,2797.0,125.0,120.0,0.09,10.0,controlled_event_benchmark_v1
+2014-12-01,United States of America,Paseo,Government,ACTUAL_WITH_EVENTS,2937.0,50.78651685393258,33.3231188287368,0.0435706623759721,10.0,controlled_event_benchmark_v1
+2014-12-01,United States of America,VTT,Government,ACTUAL_WITH_EVENTS,3233.0,17.708011135168576,9.118465821218685,0.05,250.0,controlled_event_benchmark_v1
+2014-12-01,United States of America,Velo,Channel Partners,ACTUAL_WITH_EVENTS,914.0,12.0,3.0,0.15,120.0,controlled_event_benchmark_v1
+2014-12-01,United States of America,Velo,Small Business,ACTUAL_WITH_EVENTS,1372.0,300.0,250.0,0.07,120.0,controlled_event_benchmark_v1
