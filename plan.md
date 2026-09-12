@@ -648,6 +648,7 @@ fact_driver
 
     units,
     average_sale_price,
+    unit_cogs,
     average_manufacturing_price,
     discount_rate,
 
@@ -842,58 +843,76 @@ Không hard-code assumptions sâu trong Python.
 
 ---
 
-# 11. Phase 5 — Generate Forecast
+# 11. Phase 5 — ML-assisted Forecasting Engine
 
-Forecast phải khác Budget.
-
-Giả sử hiện tại đang ở tháng 8.
-
-Forecast FY2026:
+Phase 5 forecast toàn bộ năm 2015 từ Actual đến tháng 12/2014. Do Microsoft
+Financial Sample chỉ có 16 tháng và các series ở grain chi tiết khá sparse,
+ML trong phase này là proof of concept, không phải production accuracy claim.
 
 ```text
-Jan-Aug
-= Actual
-
-Sep-Dec
-= Latest Estimate
+Actual → Features → Seasonal Naive / Ridge / XGBoost
+       → One-step + Recursive Backtest → Champion
+       → Forecast Units
+       → Rule-based ASP / Unit COGS / Discount Rate
+       → Deterministic P&L / OPEX / EBITDA
+       → Forecast vs Budget
 ```
 
-Công thức:
+Nguyên tắc:
+
+- ML chỉ dự báo `Units`; không dự báo độc lập Revenue, COGS, Gross Profit hay EBITDA.
+- Budget chỉ dùng để kiểm tra coverage và so sánh sau forecast, không phải model input.
+- Missing observation không tự động mang nghĩa `Units = 0`.
+- `unit_cogs = COGS / Units`; không đồng nhất với `average_manufacturing_price`.
+- Mọi expected row count được derive từ scaffold và grain, không hard-code.
+
+## Phase 5A — Scaffold và leakage-safe features
+
+Scaffold được tạo từ Actual 2014 chuyển sang cùng month/dimensions của năm 2015.
+Feature của tháng `t` chỉ được dùng observations trước `t`, gồm calendar features,
+ba observations gần nhất, rolling statistics, months since last observation,
+Country × Product history và `units_same_month_last_year` cùng missing flag.
+
+## Phase 5B–5D — Candidate models
+
+- Seasonal Naive với deterministic sparse-series fallback.
+- Global Ridge với preprocessing nằm trọn trong sklearn Pipeline.
+- Global XGBoost với hyperparameters cố định và `random_seed = 42`.
+
+Ridge và XGBoost dự báo `log1p(Units)`, inverse transform và clip về không âm.
+
+## Phase 5E — Evaluation và Champion
+
+Evaluation A là four-fold one-step expanding window cho Sep–Dec 2014.
+Evaluation B train đến Aug 2014 rồi recursively forecast Sep–Dec theo month batch.
+
+Metrics gồm MAE, RMSE, pooled WAPE, sMAPE, macro/median series WAPE, country WAPE
+và prediction coverage. Coverage bắt buộc 100%.
+
+Champion dùng recursive pooled WAPE. Model phức tạp hơn chỉ thay model đơn giản
+hơn nếu cải thiện ít nhất `simplicity_tolerance = 0.005`.
+
+## Phase 5F — Drivers và recursive deployment
+
+Units được forecast theo month batch: predict toàn bộ keys một tháng, append toàn
+bộ batch rồi mới build features cho tháng sau. ASP, Unit COGS và Discount Rate ưu
+tiên same-grain/same-month previous year, sau đó trailing-three và aggregate fallback.
+
+## Phase 5G — Canonical Forecast
 
 ```text
-Forecast FY
-=
-Actual YTD
-+
-Forecast Remaining Months
+Gross Sales  = Units × Average Sale Price
+Discount     = Gross Sales × Discount Rate
+Revenue      = Gross Sales - Discount
+COGS         = Units × Unit COGS
+Gross Profit = Revenue - COGS
+OPEX Total   = sum(Department OPEX)
+EBITDA       = Gross Profit - OPEX Total
 ```
 
-Remaining forecast có thể dùng:
-
-```text
-Budget future
-× latest run-rate adjustment
-× driver changes
-```
-
-Ví dụ:
-
-```text
-Volume forecast
-= Budget Volume × Last-3-Month Volume Index
-
-Price forecast
-= Current ASP × Planned Price Change
-
-COGS forecast
-= Recent Cost Run Rate × Forecast Units
-```
-
-Đây là điểm rất quan trọng vì AI có thể trả lời:
-
-```text
-Why did latest forecast move below budget?
-```
+`PlanningEngine` quản lý Budget/Scenario assumptions. `ForecastEngine` tạo
+prediction từ historical Actual. Rolling Actual YTD được hoãn đến khi có Actual
+2015; Phase 5.1 sẽ dùng lịch sử dài hơn để đánh giá proper 12-month holdout.
 
 ---
 

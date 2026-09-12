@@ -16,6 +16,7 @@
 - gross_profit_reconciliation: passed
 - source_to_fact_reconciliation: passed
 - source_to_driver_reconciliation: passed
+- unit_cogs_reconciliation: passed
 - revenue_by_product_drill_down: passed
 - gross_profit_by_country_drill_down: passed
 - csv_round_trip_validation: passed
@@ -23,9 +24,9 @@
 
 ## Output Files
 
-- `actual_staging.csv`: 700 rows, 21 columns, 120,008 bytes
-- `actual.csv`: 3,300 rows, 9 columns, 323,453 bytes
-- `drivers.csv`: 660 rows, 11 columns, 69,844 bytes
+- `actual_staging.csv`: 700 rows, 21 columns, 109,730 bytes
+- `actual.csv`: 3,300 rows, 10 columns, 326,937 bytes
+- `drivers.csv`: 660 rows, 11 columns, 71,135 bytes
 
 ## Drill-down Checks
 
@@ -55,8 +56,10 @@ Both drill-down tables reconcile to the corresponding account total.
 ## Canonical Grain
 
 - `actual.csv`: Month × Country × Product × Segment × Account × Version × Currency × Source
-- `drivers.csv`: Month × Country × Product × Segment × Version × Currency × Source
+- `drivers.csv`: Month × Country × Product × Segment × Version; `source` is lineage metadata.
 
 `actual_staging.csv` retains every raw source observation and its `source_row_id` for auditability. `actual.csv` aggregates those observations; no source rows are deleted.
+
+`unit_cogs` is derived as canonical `COGS / Units`. It remains separate from the Microsoft source metric `average_manufacturing_price`.
 
 Missing Discount Band values are retained as null in staging; no null-to-None mapping is applied.

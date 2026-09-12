@@ -4,6 +4,11 @@ import numpy as np
 import pandas as pd
 import yaml
 
+from calculation.opex import (
+    assert_noise_order_independent,
+    generate_opex as generate_shared_opex,
+)
+
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 ACTUAL_PATH = PROJECT_ROOT / "data" / "processed" / "actual.csv"
@@ -451,13 +456,20 @@ def validate_row_coverage(artifacts: dict, config: dict) -> None:
 
 
 def build_artifacts(actual_df: pd.DataFrame, config: dict) -> dict:
-    revenue_df = add_revenue_share(get_country_month_revenue(actual_df))
-    department_opex_detail = generate_all_opex(revenue_df, config)
-    department_opex = to_canonical_department_opex(department_opex_detail)
-    opex_total = build_opex_total(department_opex_detail)
-    gross_profit_df = get_country_month_gross_profit(actual_df)
-    ebitda = build_ebitda(gross_profit_df, opex_total)
-    opex_output = build_opex_output(department_opex, opex_total, ebitda)
+    shared = generate_shared_opex(
+        actual_df,
+        config,
+        version=VERSION_ACTUAL,
+        source_name=OPEX_SOURCE,
+        ebitda_source=EBITDA_SOURCE,
+    )
+    revenue_df = shared["revenue"]
+    department_opex_detail = shared["department_detail"]
+    department_opex = shared["department"]
+    opex_total = shared["opex_total"]
+    gross_profit_df = shared["gross_profit"]
+    ebitda = shared["ebitda"]
+    opex_output = shared["output"]
     finance_fact = build_finance_fact(actual_df, opex_output)
     return {
         "department_opex_detail": department_opex_detail,
@@ -499,6 +511,7 @@ def validate_artifacts(artifacts: dict, config: dict) -> tuple[dict, pd.DataFram
             "opex_grain_uniqueness": True,
             "no_accidental_row_loss": True,
             "finance_fact_grain_uniqueness": True,
+            "keyed_noise_order_independent": True,
         },
         fixed_check,
     )
@@ -508,6 +521,13 @@ def validate_determinism(actual_df: pd.DataFrame, config: dict, first: dict) -> 
     second = build_artifacts(actual_df, config)
     for name in ["opex_output", "finance_fact"]:
         pd.testing.assert_frame_equal(first[name], second[name], check_exact=True)
+    assert_noise_order_independent(
+        actual_df,
+        config,
+        version=VERSION_ACTUAL,
+        source_name=OPEX_SOURCE,
+        ebitda_source=EBITDA_SOURCE,
+    )
 
 
 def write_outputs(opex_output: pd.DataFrame, finance_fact: pd.DataFrame) -> None:
@@ -552,6 +572,7 @@ def generate_report(
             "## Synthetic Assumptions",
             "",
             "- Seasonality and country coefficients are loaded from `config/opex.yaml`.",
+            "- Controlled noise is keyed by seed, period, country, and department account; row order does not affect it.",
             f"- Controlled noise: normal(loc={config['controlled_noise']['loc']}, "
             f"scale={config['controlled_noise']['scale']}), clipped to "
             f"[{config['controlled_noise']['minimum']}, "

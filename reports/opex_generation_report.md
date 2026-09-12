@@ -19,12 +19,14 @@
 - opex_grain_uniqueness: passed
 - no_accidental_row_loss: passed
 - finance_fact_grain_uniqueness: passed
+- keyed_noise_order_independent: passed
 - deterministic_rebuild: passed
 - csv_round_trip: passed
 
 ## Synthetic Assumptions
 
 - Seasonality and country coefficients are loaded from `config/opex.yaml`.
+- Controlled noise is keyed by seed, period, country, and department account; row order does not affect it.
 - Controlled noise: normal(loc=0.0, scale=0.015), clipped to [-0.04, 0.04].
 - Final OPEX = Base OPEX × Seasonality × Country Factor × Noise Factor.
 

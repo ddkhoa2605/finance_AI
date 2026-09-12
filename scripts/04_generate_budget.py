@@ -56,6 +56,7 @@ BUDGET_DRIVER_COLUMNS = [
     "average_sale_price",
     "unit_cogs",
     "discount_rate",
+    "average_manufacturing_price",
     "source",
 ]
 ASSUMPTION_COLUMNS = [
@@ -138,6 +139,7 @@ def load_inputs() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
             "version",
             "units",
             "average_sale_price",
+            "unit_cogs",
             "discount_rate",
         ],
         "drivers.csv",
@@ -204,7 +206,12 @@ def attach_actual_unit_cogs(
         raise ValueError("Actual COGS coverage does not match base-year drivers.")
     if (result["units"] <= 0).any():
         raise ValueError("Cannot calculate unit COGS with non-positive units.")
-    result["actual_unit_cogs"] = result["actual_cogs"] / result["units"]
+    expected_unit_cogs = result["actual_cogs"] / result["units"]
+    if result["unit_cogs"].isna().any() or not np.allclose(
+        result["unit_cogs"], expected_unit_cogs, atol=TOLERANCE
+    ):
+        raise ValueError("Canonical driver Unit COGS does not reconcile to Actual COGS.")
+    result["actual_unit_cogs"] = result["unit_cogs"]
     return result
 
 
@@ -266,6 +273,7 @@ def build_budget_drivers(detail: pd.DataFrame) -> pd.DataFrame:
             "average_sale_price": detail["budget_average_sale_price"],
             "unit_cogs": detail["budget_unit_cogs"],
             "discount_rate": detail["budget_discount_rate"],
+            "average_manufacturing_price": pd.NA,
             "source": BUDGET_SOURCE,
         }
     )

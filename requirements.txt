@@ -3,3 +3,6 @@ numpy
 openpyxl
 tabulate
 pyyaml
+scikit-learn
+xgboost
+joblib

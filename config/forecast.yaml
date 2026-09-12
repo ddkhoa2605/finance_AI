@@ -1,0 +1,40 @@
+training_end: 2014-12-01
+forecast_year: 2015
+horizon_months: 12
+random_seed: 42
+
+validation_months:
+  - 2014-09-01
+  - 2014-10-01
+  - 2014-11-01
+  - 2014-12-01
+
+champion:
+  metric: recursive_wape
+  secondary_metric: one_step_wape
+  simplicity_tolerance: 0.005
+
+driver_rules:
+  trailing_weights:
+    - 0.2
+    - 0.3
+    - 0.5
+  pricing_factor: 1.0
+  cost_factor: 1.0
+
+models:
+  ridge:
+    alpha: 10.0
+  xgboost:
+    objective: reg:squarederror
+    n_estimators: 160
+    max_depth: 3
+    learning_rate: 0.03
+    min_child_weight: 5
+    reg_lambda: 1.0
+    subsample: 1.0
+    colsample_bytree: 1.0
+    random_state: 42
+    n_jobs: 1
+    verbosity: 0
+

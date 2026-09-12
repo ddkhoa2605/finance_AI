@@ -1,0 +1,179 @@
+{
+  "budget_role": "coverage_validation_and_comparison_only",
+  "champion": "xgboost",
+  "evaluation_context_hash": "93ac4605e9fe2015c74af2cf107079e69951ec7a435e7777095b5118cd413c29",
+  "final_refit": true,
+  "forecast_year": 2015,
+  "library_versions": {
+    "joblib": "1.5.3",
+    "pandas": "3.0.3",
+    "scikit_learn": "1.9.0",
+    "xgboost": "3.4.1"
+  },
+  "metrics": {
+    "ridge": {
+      "one_step": {
+        "macro_wape": 0.5671341499931755,
+        "mae": 749.9717843048097,
+        "median_series_wape": 0.3866608452339737,
+        "prediction_coverage": 1.0,
+        "rmse": 949.692469233936,
+        "smape": 0.45908933778504907,
+        "wape": 0.437242706626384
+      },
+      "recursive": {
+        "macro_wape": 0.7221132143828408,
+        "mae": 818.4512419220579,
+        "median_series_wape": 0.41724476132786154,
+        "prediction_coverage": 1.0,
+        "rmse": 981.8854102322218,
+        "smape": 0.48134343144671254,
+        "wape": 0.4771670664803049
+      }
+    },
+    "seasonal_naive": {
+      "one_step": {
+        "macro_wape": 0.7467638934009985,
+        "mae": 980.2566844919786,
+        "median_series_wape": 0.5791615791615792,
+        "prediction_coverage": 1.0,
+        "rmse": 1241.12266325317,
+        "smape": 0.6018981505540428,
+        "wape": 0.571501614974996
+      },
+      "recursive": {
+        "macro_wape": 0.7527020832258733,
+        "mae": 970.6951871657755,
+        "median_series_wape": 0.5806096217407272,
+        "prediction_coverage": 1.0,
+        "rmse": 1218.0414497306863,
+        "smape": 0.6078091541774233,
+        "wape": 0.5659271452978663
+      }
+    },
+    "xgboost": {
+      "one_step": {
+        "macro_wape": 0.5392701587235598,
+        "mae": 749.7907221993023,
+        "median_series_wape": 0.3804385517278638,
+        "prediction_coverage": 1.0,
+        "rmse": 958.7096603422402,
+        "smape": 0.464290448301321,
+        "wape": 0.4371371452082929
+      },
+      "recursive": {
+        "macro_wape": 0.5621701064750316,
+        "mae": 743.4527537299988,
+        "median_series_wape": 0.3850471907068935,
+        "prediction_coverage": 1.0,
+        "rmse": 963.6026975835786,
+        "smape": 0.46349429596515523,
+        "wape": 0.43344203221067557
+      }
+    }
+  },
+  "models": {
+    "ridge": {
+      "complexity_rank": 1,
+      "features": [
+        "country",
+        "product",
+        "segment",
+        "month",
+        "quarter",
+        "month_sin",
+        "month_cos",
+        "time_index",
+        "units_obs_1",
+        "units_obs_2",
+        "units_obs_3",
+        "units_rolling_mean_3",
+        "units_rolling_std_3",
+        "months_since_last_observation",
+        "country_product_recent_median",
+        "product_recent_median",
+        "units_same_month_last_year",
+        "units_lag_12_missing"
+      ],
+      "name": "ridge",
+      "parameters": {
+        "alpha": 10.0,
+        "target_transform": "log1p"
+      },
+      "training_end": "2014-12-01"
+    },
+    "seasonal_naive": {
+      "complexity_rank": 0,
+      "fallback_order": [
+        "same_series_same_month_last_year",
+        "same_series_latest_observation",
+        "country_product_same_month_last_year_median",
+        "product_same_month_last_year_median",
+        "global_same_month_last_year_median",
+        "global_historical_median"
+      ],
+      "name": "seasonal_naive",
+      "training_end": "2014-12-01"
+    },
+    "xgboost": {
+      "complexity_rank": 2,
+      "features": [
+        "country",
+        "product",
+        "segment",
+        "month",
+        "quarter",
+        "month_sin",
+        "month_cos",
+        "time_index",
+        "units_obs_1",
+        "units_obs_2",
+        "units_obs_3",
+        "units_rolling_mean_3",
+        "units_rolling_std_3",
+        "months_since_last_observation",
+        "country_product_recent_median",
+        "product_recent_median",
+        "units_same_month_last_year",
+        "units_lag_12_missing"
+      ],
+      "name": "xgboost",
+      "parameters": {
+        "colsample_bytree": 1.0,
+        "learning_rate": 0.03,
+        "max_depth": 3,
+        "min_child_weight": 5,
+        "n_estimators": 160,
+        "n_jobs": 1,
+        "objective": "reg:squarederror",
+        "random_state": 42,
+        "reg_lambda": 1.0,
+        "subsample": 1.0,
+        "verbosity": 0
+      },
+      "target_transform": "log1p",
+      "training_end": "2014-12-01"
+    }
+  },
+  "prediction_input_hash": "8749f2b687dbd82566b2416a6248049d93ab6106eb32e0c89690573b5912dcd8",
+  "secondary_metric": "one_step_wape",
+  "selection_decisions": [
+    {
+      "candidate": "ridge",
+      "candidate_selected": true,
+      "incumbent": "seasonal_naive",
+      "recursive_wape_improvement": 0.08876007881756137,
+      "required_improvement": 0.005
+    },
+    {
+      "candidate": "xgboost",
+      "candidate_selected": true,
+      "incumbent": "ridge",
+      "recursive_wape_improvement": 0.043725034269629315,
+      "required_improvement": 0.005
+    }
+  ],
+  "selection_metric": "recursive_wape",
+  "simplicity_tolerance": 0.005,
+  "training_end": "2014-12-01"
+}

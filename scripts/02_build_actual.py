@@ -460,6 +460,10 @@ def build_fact_driver(
                 "discounts",
                 "sum",
             ),
+            cogs=(
+                "cogs",
+                "sum",
+            ),
             weighted_manufacturing_price=(
                 "manufacturing_price_weighted",
                 "sum",
@@ -484,6 +488,12 @@ def build_fact_driver(
             "weighted_manufacturing_price"
         ]
         / drivers["units"],
+        np.nan,
+    )
+
+    drivers["unit_cogs"] = np.where(
+        drivers["units"] != 0,
+        drivers["cogs"] / drivers["units"],
         np.nan,
     )
 
@@ -513,8 +523,9 @@ def build_fact_driver(
             "version",
             "units",
             "average_sale_price",
-            "average_manufacturing_price",
+            "unit_cogs",
             "discount_rate",
+            "average_manufacturing_price",
             "source",
         ]
     ]
@@ -660,6 +671,16 @@ def validate_driver_reconciliation(
         raise ValueError(
             "Units reconciliation failed."
         )
+
+    if drivers[["units", "unit_cogs"]].isna().any().any():
+        raise ValueError("Canonical drivers contain missing Units or Unit COGS.")
+    if (drivers["units"] <= 0).any() or (drivers["unit_cogs"] < 0).any():
+        raise ValueError("Canonical Units must be positive and Unit COGS non-negative.")
+
+    driver_cogs = float((drivers["units"] * drivers["unit_cogs"]).sum())
+    source_cogs = float(staging["cogs"].sum())
+    if abs(source_cogs - driver_cogs) > 0.01:
+        raise ValueError("Unit COGS reconciliation failed.")
 
 def save_drivers(
     drivers: pd.DataFrame,
