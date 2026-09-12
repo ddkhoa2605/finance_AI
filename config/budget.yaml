@@ -1,0 +1,22 @@
+base_year: 2014
+budget_year: 2015
+
+budget:
+  units_growth:
+    default: 0.03
+
+  price_growth:
+    default: 0.025
+
+  discount_rate_change:
+    default: 0.00
+
+  cogs_inflation:
+    default: 0.02
+
+  opex:
+    sales_growth: 0.04
+    marketing_growth: 0.05
+    operations_growth: 0.03
+    rnd_growth: 0.06
+    gna_growth: 0.04

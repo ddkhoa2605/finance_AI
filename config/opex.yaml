@@ -1,0 +1,59 @@
+random_seed: 42
+
+seasonality:
+  1: 0.95
+  2: 0.95
+  3: 1.00
+  4: 1.00
+  5: 1.00
+  6: 1.02
+  7: 1.02
+  8: 1.00
+  9: 1.03
+  10: 1.05
+  11: 1.08
+  12: 1.12
+
+country_coefficients:
+  Canada: 1.00
+  France: 1.04
+  Germany: 1.06
+  Mexico: 0.92
+  United States of America: 1.10
+
+controlled_noise:
+  loc: 0.0
+  scale: 0.015
+  minimum: -0.04
+  maximum: 0.04
+
+departments:
+  sales:
+    display_name: Sales
+    account: OPEX_SALES
+    fixed_monthly: 250000
+    revenue_ratio: 0.025
+
+  marketing:
+    display_name: Marketing
+    account: OPEX_MARKETING
+    fixed_monthly: 180000
+    revenue_ratio: 0.035
+
+  operations:
+    display_name: Operations
+    account: OPEX_OPERATIONS
+    fixed_monthly: 150000
+    revenue_ratio: 0.020
+
+  rnd:
+    display_name: R&D
+    account: OPEX_RND
+    fixed_monthly: 300000
+    revenue_ratio: 0.010
+
+  gna:
+    display_name: Finance & G&A
+    account: OPEX_GNA
+    fixed_monthly: 200000
+    revenue_ratio: 0.015
