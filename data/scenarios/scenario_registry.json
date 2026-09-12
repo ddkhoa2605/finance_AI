@@ -1,0 +1,306 @@
+{
+  "engine": {
+    "default_base_version": "FORECAST",
+    "department_names": [
+      "Finance & G&A",
+      "Marketing",
+      "Operations",
+      "R&D",
+      "Sales"
+    ],
+    "deterministic": true,
+    "engine": "LocalScenarioEngine",
+    "finance_reconstruction": "scripts/calculation/finance.py",
+    "opex_reconstruction": "scripts/calculation/opex.py",
+    "supported_baselines": [
+      "ACTUAL",
+      "BUDGET",
+      "FORECAST"
+    ],
+    "supported_filters": [
+      "period",
+      "country",
+      "product",
+      "segment",
+      "department"
+    ],
+    "supported_levers": [
+      "units_change_pct",
+      "price_change_pct",
+      "discount_rate_change_pp",
+      "unit_cogs_change_pct",
+      "department_opex_change_pct"
+    ]
+  },
+  "registry_version": "scenario_registry_v1",
+  "scenario_config_hash": "13bb25aec322bbc5b07836998276f8985a2653f5a023017f35577df57b96a0c4",
+  "scenarios": {
+    "SCN_001": {
+      "base_version": "FORECAST",
+      "baseline_lineage": {
+        "path": "data/processed/forecast_drivers.csv",
+        "rows": 493,
+        "sha256": "da90e7fb477ccca9ff07dbb3c8c4f53e434f5ace754777fe701c875b63784ac5"
+      },
+      "comparison_output_hash": "80db776fd326ad42b46320419804b0d6b6e5630a90041cde36642370a3073bca",
+      "discount_rows_clipped": 0,
+      "driver_output_hash": "7bc5bfc8f78f25f06ed7e20e4dd91684bc3a20333d2fa5266e1265fe3a67acf7",
+      "expected_direction": {
+        "COGS": "unchanged",
+        "EBITDA": "increase",
+        "GROSS_PROFIT": "increase",
+        "OPEX_TOTAL": "increase",
+        "REVENUE": "increase",
+        "average_sale_price": "increase",
+        "units": "unchanged"
+      },
+      "filters": {
+        "country": [
+          "Canada"
+        ],
+        "product": [
+          "Paseo"
+        ],
+        "segment": null
+      },
+      "finance_output_hash": "8a9f112b2b001b16ece8dcd3cd6216f7b263e27f2700958db6c6228cfea65a5d",
+      "key_financial_impacts": {
+        "EBITDA": {
+          "amount": 19556.870092085097,
+          "percent_of_absolute_baseline": 0.007440963779820924
+        },
+        "GROSS_PROFIT": {
+          "amount": 21649.690362890717,
+          "percent_of_absolute_baseline": 0.008615394659499608
+        },
+        "OPEX_TOTAL": {
+          "amount": 2092.8202708046883,
+          "percent_of_absolute_baseline": 0.00040707013076595285
+        },
+        "REVENUE": {
+          "amount": 21649.69036288932,
+          "percent_of_absolute_baseline": 0.0011766613099697641
+        }
+      },
+      "levers": {
+        "department_opex_change_pct": {},
+        "discount_rate_change_pp": 0.0,
+        "price_change_pct": 0.03,
+        "unit_cogs_change_pct": 0.0,
+        "units_change_pct": 0.0
+      },
+      "matched_department_opex_rows": {},
+      "matched_driver_rows": 6,
+      "name": "Canada Paseo Q1 Price Increase",
+      "period": {
+        "end": "2015-03-01",
+        "start": "2015-01-01"
+      },
+      "request_hash": "da194c36412e8b80986aa36e5a73c30370c5c3090f20568380dd2bba3227f7df",
+      "scenario_driver_rows": 493,
+      "scenario_finance_rows": 2885,
+      "validation_status": "passed"
+    },
+    "SCN_002": {
+      "base_version": "FORECAST",
+      "baseline_lineage": {
+        "path": "data/processed/forecast_drivers.csv",
+        "rows": 493,
+        "sha256": "da90e7fb477ccca9ff07dbb3c8c4f53e434f5ace754777fe701c875b63784ac5"
+      },
+      "comparison_output_hash": "c0955b73ccccb09e8ea1d74c947e0188cc455f1c98f7e2fefaaf3c8ad255a975",
+      "discount_rows_clipped": 0,
+      "driver_output_hash": "942998b7f404da19c1cc476f07c0fa90c401a324cedaad0b69ae3a659d55bb64",
+      "expected_direction": {
+        "COGS": "decrease",
+        "EBITDA": "decrease",
+        "GROSS_PROFIT": "decrease",
+        "OPEX_TOTAL": "decrease",
+        "REVENUE": "decrease",
+        "average_sale_price": "unchanged",
+        "discount_rate": "unchanged",
+        "unit_cogs": "unchanged",
+        "units": "decrease"
+      },
+      "filters": {
+        "country": [
+          "Germany"
+        ],
+        "product": [
+          "VTT"
+        ],
+        "segment": null
+      },
+      "finance_output_hash": "1b39b91d0af5269eb68e5d08a24579e1f840993e31d33dc1288d8606d39a4945",
+      "key_financial_impacts": {
+        "EBITDA": {
+          "amount": -1075.380433572922,
+          "percent_of_absolute_baseline": -0.00041063114905008516
+        },
+        "GROSS_PROFIT": {
+          "amount": -3732.5044786375947,
+          "percent_of_absolute_baseline": -0.001184972719896115
+        },
+        "OPEX_TOTAL": {
+          "amount": -2657.124045065604,
+          "percent_of_absolute_baseline": -0.00046060950547002397
+        },
+        "REVENUE": {
+          "amount": -23079.512986935675,
+          "percent_of_absolute_baseline": -0.0010316571419983663
+        }
+      },
+      "levers": {
+        "department_opex_change_pct": {},
+        "discount_rate_change_pp": 0.0,
+        "price_change_pct": 0.0,
+        "unit_cogs_change_pct": 0.0,
+        "units_change_pct": -0.1
+      },
+      "matched_department_opex_rows": {},
+      "matched_driver_rows": 5,
+      "name": "Germany VTT Q2 Volume Downside",
+      "period": {
+        "end": "2015-06-01",
+        "start": "2015-04-01"
+      },
+      "request_hash": "a3415cb1028c3573139b90c1476484ae98a461156ae9ed152461faf9372baa2d",
+      "scenario_driver_rows": 493,
+      "scenario_finance_rows": 2885,
+      "validation_status": "passed"
+    },
+    "SCN_003": {
+      "base_version": "FORECAST",
+      "baseline_lineage": {
+        "path": "data/processed/forecast_drivers.csv",
+        "rows": 493,
+        "sha256": "da90e7fb477ccca9ff07dbb3c8c4f53e434f5ace754777fe701c875b63784ac5"
+      },
+      "comparison_output_hash": "4e94bcb634a5e20fe9c9174ac8ca4c4df04391e1cc4cb4d15a20894fb539d195",
+      "discount_rows_clipped": 0,
+      "driver_output_hash": "b2a2fbb4d3210bc9565a24d0513d941adb6f3394abd9fcef20e3451c0a404c96",
+      "expected_direction": {
+        "COGS": "increase",
+        "EBITDA": "decrease",
+        "GROSS_PROFIT": "decrease",
+        "OPEX_TOTAL": "unchanged",
+        "REVENUE": "unchanged",
+        "unit_cogs": "increase"
+      },
+      "filters": {
+        "country": [
+          "United States of America"
+        ],
+        "product": null,
+        "segment": null
+      },
+      "finance_output_hash": "09d037b83b864d76773c0e32686edfd362633c3c8c0bd3fa21187052229af1b7",
+      "key_financial_impacts": {
+        "EBITDA": {
+          "amount": -154025.5805175784,
+          "percent_of_absolute_baseline": -0.05645826023141917
+        },
+        "GROSS_PROFIT": {
+          "amount": -154025.58051757887,
+          "percent_of_absolute_baseline": -0.05981849710914524
+        },
+        "OPEX_TOTAL": {
+          "amount": 0.0,
+          "percent_of_absolute_baseline": 0.0
+        },
+        "REVENUE": {
+          "amount": 0.0,
+          "percent_of_absolute_baseline": 0.0
+        }
+      },
+      "levers": {
+        "department_opex_change_pct": {},
+        "discount_rate_change_pp": 0.0,
+        "price_change_pct": 0.0,
+        "unit_cogs_change_pct": 0.05,
+        "units_change_pct": 0.0
+      },
+      "matched_department_opex_rows": {},
+      "matched_driver_rows": 21,
+      "name": "USA Q3 Unit COGS Inflation",
+      "period": {
+        "end": "2015-09-01",
+        "start": "2015-07-01"
+      },
+      "request_hash": "579866036859cb1c82dfa6823053573d39f09a79ab3123cb68da34d10363ff9f",
+      "scenario_driver_rows": 493,
+      "scenario_finance_rows": 2885,
+      "validation_status": "passed"
+    },
+    "SCN_004": {
+      "base_version": "FORECAST",
+      "baseline_lineage": {
+        "path": "data/processed/forecast_drivers.csv",
+        "rows": 493,
+        "sha256": "da90e7fb477ccca9ff07dbb3c8c4f53e434f5ace754777fe701c875b63784ac5"
+      },
+      "comparison_output_hash": "f6592652c15f65fb42024469e6e64abf9a5fd9717021d745d4de0a1ee4f3b2c6",
+      "discount_rows_clipped": 0,
+      "driver_output_hash": "b75219858b8dac99b3097a6bfc0ef60d546e579575b089455fd2f3951852ee64",
+      "expected_direction": {
+        "EBITDA": "increase",
+        "GROSS_PROFIT": "unchanged",
+        "OPEX_MARKETING": "decrease",
+        "OPEX_TOTAL": "decrease",
+        "REVENUE": "unchanged",
+        "average_sale_price": "unchanged",
+        "discount_rate": "unchanged",
+        "unit_cogs": "unchanged",
+        "units": "unchanged"
+      },
+      "filters": {
+        "country": [
+          "France"
+        ],
+        "product": null,
+        "segment": null
+      },
+      "finance_output_hash": "fa70298740dd26e2c3622ea76b38ea1332bfb8a92bda419287ace2f7e8e07015",
+      "key_financial_impacts": {
+        "EBITDA": {
+          "amount": 115806.45894624293,
+          "percent_of_absolute_baseline": 0.010326599492980749
+        },
+        "GROSS_PROFIT": {
+          "amount": 1.862645149230957e-09,
+          "percent_of_absolute_baseline": 1.5962551889213113e-16
+        },
+        "OPEX_TOTAL": {
+          "amount": -115806.45894624293,
+          "percent_of_absolute_baseline": -0.005060757149267803
+        },
+        "REVENUE": {
+          "amount": 0.0,
+          "percent_of_absolute_baseline": 0.0
+        }
+      },
+      "levers": {
+        "department_opex_change_pct": {
+          "Marketing": -0.1
+        },
+        "discount_rate_change_pp": 0.0,
+        "price_change_pct": 0.0,
+        "unit_cogs_change_pct": 0.0,
+        "units_change_pct": 0.0
+      },
+      "matched_department_opex_rows": {
+        "Marketing": 12
+      },
+      "matched_driver_rows": 99,
+      "name": "France FY Marketing OPEX Reduction",
+      "period": {
+        "end": "2015-12-01",
+        "start": "2015-01-01"
+      },
+      "request_hash": "25c727b19a1dae608d4e450f38d8bb005972a64e84f7499bd921b4ca3ca028cd",
+      "scenario_driver_rows": 493,
+      "scenario_finance_rows": 2885,
+      "validation_status": "passed"
+    }
+  }
+}

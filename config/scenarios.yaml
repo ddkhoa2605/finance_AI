@@ -1,0 +1,111 @@
+default_base_version: FORECAST
+output_version: SCENARIO
+source_name: scenario_engine_v1
+opex_source_name: scenario_opex_v1
+ebitda_source_name: derived_scenario_v1
+tolerance: 0.01
+
+scenarios:
+  - scenario_id: SCN_001
+    name: Canada Paseo Q1 Price Increase
+    base_version: FORECAST
+    period:
+      start: 2015-01-01
+      end: 2015-03-01
+    filters:
+      country: [Canada]
+      product: [Paseo]
+      segment: null
+    levers:
+      units_change_pct: 0.00
+      price_change_pct: 0.03
+      discount_rate_change_pp: 0.00
+      unit_cogs_change_pct: 0.00
+      department_opex_change_pct: {}
+    expected_direction:
+      units: unchanged
+      average_sale_price: increase
+      COGS: unchanged
+      REVENUE: increase
+      GROSS_PROFIT: increase
+      OPEX_TOTAL: increase
+      EBITDA: increase
+
+  - scenario_id: SCN_002
+    name: Germany VTT Q2 Volume Downside
+    base_version: FORECAST
+    period:
+      start: 2015-04-01
+      end: 2015-06-01
+    filters:
+      country: [Germany]
+      product: [VTT]
+      segment: null
+    levers:
+      units_change_pct: -0.10
+      price_change_pct: 0.00
+      discount_rate_change_pp: 0.00
+      unit_cogs_change_pct: 0.00
+      department_opex_change_pct: {}
+    expected_direction:
+      units: decrease
+      average_sale_price: unchanged
+      unit_cogs: unchanged
+      discount_rate: unchanged
+      REVENUE: decrease
+      COGS: decrease
+      GROSS_PROFIT: decrease
+      OPEX_TOTAL: decrease
+      EBITDA: decrease
+
+  - scenario_id: SCN_003
+    name: USA Q3 Unit COGS Inflation
+    base_version: FORECAST
+    period:
+      start: 2015-07-01
+      end: 2015-09-01
+    filters:
+      country: [United States of America]
+      product: null
+      segment: null
+    levers:
+      units_change_pct: 0.00
+      price_change_pct: 0.00
+      discount_rate_change_pp: 0.00
+      unit_cogs_change_pct: 0.05
+      department_opex_change_pct: {}
+    expected_direction:
+      unit_cogs: increase
+      REVENUE: unchanged
+      COGS: increase
+      GROSS_PROFIT: decrease
+      OPEX_TOTAL: unchanged
+      EBITDA: decrease
+
+  - scenario_id: SCN_004
+    name: France FY Marketing OPEX Reduction
+    base_version: FORECAST
+    period:
+      start: 2015-01-01
+      end: 2015-12-01
+    filters:
+      country: [France]
+      product: null
+      segment: null
+    levers:
+      units_change_pct: 0.00
+      price_change_pct: 0.00
+      discount_rate_change_pp: 0.00
+      unit_cogs_change_pct: 0.00
+      department_opex_change_pct:
+        Marketing: -0.10
+    expected_direction:
+      units: unchanged
+      average_sale_price: unchanged
+      unit_cogs: unchanged
+      discount_rate: unchanged
+      REVENUE: unchanged
+      GROSS_PROFIT: unchanged
+      OPEX_MARKETING: decrease
+      OPEX_TOTAL: decrease
+      EBITDA: increase
